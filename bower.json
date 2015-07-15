@@ -1,0 +1,10 @@
+{
+  "name": "commercial-website",
+  "private": true,
+  "dependencies": {
+    "foundation": "~5.2",
+    
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {}
+}
