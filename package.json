@@ -1,0 +1,26 @@
+{
+  "name": "commercial-website",
+  "version": "0.1.0",
+  "description": "Commercial website for Junior ESIEE",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JUNIOR-ESIEE/commercial-website.git"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "Maxence Aïci (mininao)",
+  "license": "© 2015 - Junior ESIEE",
+  "bugs": {
+    "url": "https://github.com/JUNIOR-ESIEE/commercial-website/issues"
+  },
+  "homepage": "https://github.com/JUNIOR-ESIEE/commercial-website",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.3"
+  }
+}
