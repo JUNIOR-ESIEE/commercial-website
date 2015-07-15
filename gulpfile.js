@@ -85,8 +85,7 @@ gulp.task('serve', ['styles'], function () {
             directory: true
         },
         debugInfo: false,
-        open: false,
-        hostnameSuffix: ".xip.io"
+        open: false
     }, function (err, bs) {
         require('opn')(bs.options.get('urls').get('local'));;
         console.log('Started connect web server on ' + bs.options.url);
