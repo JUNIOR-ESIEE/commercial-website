@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 455.3 438.4" enable-background="new 0 0 455.3 438.4" xml:space="preserve">
+<path fill="#3F3F3F" d="M128.8,116.2v190.3c0,24.5-19.6,44.1-44.8,44.1H0v87.7h86.4c71.7,0,129.4-58.9,129.4-131.8V29.2L128.8,116.2
+	z"/>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="135.4039" y1="-6.1677" x2="460.404" y2="431.8323">
+		<stop  offset="0" style="stop-color:#5BC1D3"/>
+		<stop  offset="1" style="stop-color:#8FD1E3"/>
+	</linearGradient>
+	<polygon fill="url(#SVGID_1_)" points="215.8,0 128.8,87.1 128.8,0 	"/>
+	<g>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="121.7245" y1="3.9826" x2="446.7245" y2="441.9826">
+			<stop  offset="0" style="stop-color:#5BC1D3"/>
+			<stop  offset="1" style="stop-color:#8FD1E3"/>
+		</linearGradient>
+		<polygon fill="url(#SVGID_2_)" points="455.3,350.7 367.7,438.4 455.3,438.4 		"/>
+		<polygon fill="#3F3F3F" points="426.2,350.7 323.5,350.7 323.5,263 438.8,263 438.8,175.3 323.5,175.3 323.5,87.7 455.3,87.7 
+			455.3,0 235.9,0 235.9,438.4 338.5,438.4 		"/>
+	</g>
+</g>
+</svg>

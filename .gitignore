@@ -3,3 +3,10 @@ node_modules
 app/bower_components
 .sass-cache
 dist
+
+# Generated CSS
+app/css
+
+# Teporary videos
+app/images/videobg.mp4
+app/images/videobg.webm
