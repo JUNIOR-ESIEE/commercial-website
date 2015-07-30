@@ -1,0 +1,9 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 455.3 438.4" enable-background="new 0 0 455.3 438.4" xml:space="preserve">
+	<path fill="#3c3c3c" d="M128.8,116.2v190.3c0,24.5-19.6,44.1-44.8,44.1H0v87.7h86.4c71.7,0,129.4-58.9,129.4-131.8V29.2L128.8,116.2
+	z" class="letter letter-j"/>
+	<polygon fill="#3c3c3c" points="426.2,350.7 323.5,350.7 323.5,263 438.8,263 438.8,175.3 323.5,175.3 323.5,87.7 455.3,87.7 
+	455.3,0 235.9,0 235.9,438.4 338.5,438.4" class="letter letter-e"/>
+	<polygon fill="#F68658" points="215.8,0 128.8,87.1 128.8,0" class="corner corner-j"/>
+	<polygon fill="#F68658" points="455.3,350.7 367.7,438.4 455.3,438.4" class="corner corner-e"/>	
+</svg>

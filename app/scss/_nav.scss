@@ -1,0 +1,61 @@
+$navHeight: 6rem;
+@mixin nav-colors($text-color, $background) {
+	background: $background;
+	.logo svg {
+		.letter {
+			fill: $text-color;
+		}
+		.corner {
+			fill: $text-color;
+		}
+	}
+	.menu li, .menu i{
+		color: $text-color;
+	}
+}
+nav.main {
+	// General
+	
+	padding: $navHeight * 0.2 2rem;
+	width: 100%;
+	height: $navHeight;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+
+	.logo, .logo svg, .row{ // Logo height fix
+		height: 100%;
+	}
+	
+	.menu {
+		&-large {
+			ul.inline-list {
+				margin: 0;
+				li {
+					line-height: $navHeight * 0.6;
+					font-size: 1.15rem;
+					font-weight: 600;
+				}
+			}
+		}
+		
+		&-small {
+			i {
+				font-size: 2rem;
+				line-height: $navHeight * 0.6;
+				cursor: pointer;
+			}
+		}
+	}
+	
+	@include nav-colors(rgba(255, 255, 255, 0.75),transparent);
+	&.on-content {
+		@include nav-colors(#333333,#fdfdfd);
+		@include material-shadow(1);
+	}
+}
+.navspacer {
+	height: $navHeight;
+	padding: 0;
+	margin: 0;
+}
