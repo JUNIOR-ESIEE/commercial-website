@@ -1,9 +1,10 @@
 section.hero {
-	$bg-color: #713E5A;
+	$bg-color: #9ca2c1;
 	$titles-color: #f4ecd6;
 	text-align: center;
-	background: linear-gradient( -35deg,darken(#847996,20%), lighten(#847996,15%));
+	background: linear-gradient( -35deg,darken($bg-color,20%), lighten($bg-color,6.5%));
 	//background:$bg-color;
+	padding-bottom: 4rem;
 	.titles {
 		padding: 0 2rem;
 		margin: 4rem 0;
@@ -63,6 +64,47 @@ section.hero {
 				font-weight: 600;
 			}
 			
+		}
+	}
+	.cta {
+		$cta-bg:darken($bg-color,10%);
+		margin: 4rem auto;
+		text-align: center;
+		a {
+			position: relative;
+			background:linear-gradient( 130deg,#40f99b, #ACFCD9);
+			//background:radial-gradient(circle at center -2px,#acfa97, #40f99b);
+			padding: 1rem 2rem;
+			
+			border-radius: 2rem;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: .1rem;
+			font-size: 1.15rem;
+			color: $cta-bg; //61707d
+			line-height: 1.4;
+		}
+		a:after { // Thanks to heapanalytics.com. Steal like an artist.
+			position:absolute;
+			top:2px;
+			left:2px;
+			right:2px;
+			bottom:2px;
+			opacity:0;
+			padding: .81rem 0rem;
+			content:attr(data-text);
+			border-radius:30px;
+			transition:opacity .15s, color .15s;
+			background-color: $cta-bg;
+			letter-spacing: .1rem;
+			font-size: 1.15rem;
+			line-height: 1.4;
+		}
+		a:hover:after {
+			opacity: 1;
+		}
+		a:hover {
+			color:$titles-color;
 		}
 	}
 }
