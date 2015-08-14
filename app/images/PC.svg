@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 991 603.6" enable-background="new 0 0 991 603.6" xml:space="preserve">
+<g id="parties_blanches">
+	<polygon fill="#FBFBFB" points="495.5,577 575,577 575,520.6 416,520.6 416,577 	"/>
+	<path fill="#FBFBFB" d="M578,514.6h407v-56.4H495.5H6v56.4h407H578z M957.7,473.5c7.1,0,12.9,5.8,12.9,12.9
+		c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9C944.8,479.3,950.6,473.5,957.7,473.5z M913.8,473.5c7.1,0,12.9,5.8,12.9,12.9
+		c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9C900.9,479.3,906.7,473.5,913.8,473.5z M495.5,467.3c1.6,0,3.1,0.2,4.6,0.6
+		c8.4,2.1,14.6,9.6,14.6,18.6c0,9-6.2,16.5-14.6,18.6c-1.5,0.4-3,0.6-4.6,0.6c-10.6,0-19.2-8.6-19.2-19.2
+		C476.3,475.8,484.9,467.3,495.5,467.3z"/>
+</g>
+<g id="LCD_bleu_x2F_rouge">
+	<rect id="blue" x="6" y="6" fill="#95D5EE" width="489.5" height="446.2"/>
+	<rect id="red" x="495.5" y="6" fill="#E58A76" width="489.5" height="446.2"/>
+</g>
+<g id="Pied">
+	<polygon fill="#95D5EE" points="413,583 382,583 382,597.6 495.5,597.6 495.5,583 	"/>
+	<polygon fill="#E58A76" points="495.5,583 495.5,597.6 609,597.6 609,583 578,583 	"/>
+</g>
+<path id="écran" fill="#202019" d="M612,577h-31v-56.4h407c1.7,0,3-1.3,3-3v-59.4v-2.9v-0.1V3c0-1.7-1.3-3-3-3H495.5H3
+	C1.3,0,0,1.3,0,3v450.6v1.7v0.1v62.3c0,1.7,1.3,3,3,3h407V577h-31c-1.5,0-2.8,1.2-3,2.7c0,0.1,0,0.2,0,0.3v20.6c0,1.7,1.3,3,3,3
+	h116.5H612c1.7,0,3-1.3,3-3V580c0-0.1,0-0.2,0-0.3C614.8,578.2,613.5,577,612,577z M6,6h489.5H985v446.2H495.5H6V6z M609,597.6
+	H495.5H382V583h31h82.5H578h31V597.6z M6,514.6v-56.4h489.5H985v56.4H578H413H6z M575,520.6V577h-79.5H416v-56.4H575z"/>
+<g id="Boutons">
+	<circle fill="#E58A76" cx="957.7" cy="486.4" r="12.9"/>
+	<circle fill="#95D5EE" cx="913.8" cy="486.4" r="12.9"/>
+	<path fill="#212119" d="M495.5,505.6c1.6,0,3.1-0.2,4.6-0.6c8.4-2.1,14.6-9.6,14.6-18.6c0-9-6.2-16.5-14.6-18.6
+		c-1.5-0.4-3-0.6-4.6-0.6c-10.6,0-19.2,8.6-19.2,19.2C476.3,497,484.9,505.6,495.5,505.6z"/>
+</g>
+<g id="Lignes_gauche">
+	<rect x="33.1" y="26.3" fill="#E0C879" width="321" height="17"/>
+	<rect x="33.1" y="229.8" opacity="0.7" fill="#FFFFFF" width="118" height="17"/>
+	<rect x="33.1" y="383.3" opacity="0.7" fill="#FFFFFF" width="321" height="17"/>
+	<rect x="33.1" y="416.7" fill="#C3D880" width="140.5" height="17"/>
+	<rect x="67.1" y="71.3" opacity="0.7" fill="#FFFFFF" width="173" height="17"/>
+	<rect x="67.1" y="109.8" fill="#E0C879" width="93.5" height="17"/>
+	<rect x="173.6" y="109.8" opacity="0.7" fill="#FFFFFF" width="114.5" height="17"/>
+	<rect x="266.6" y="71.3" fill="#C3D880" width="72.5" height="17"/>
+	<rect x="67.1" y="148.3" opacity="0.7" fill="#FFFFFF" width="358" height="17"/>
+	<rect x="67.1" y="186.8" opacity="0.7" fill="#FFFFFF" width="84" height="17"/>
+	<rect x="193.6" y="186.8" fill="#E0C879" width="126" height="17"/>
+	<rect x="67.1" y="266.3" fill="#C3D880" width="97.7" height="17"/>
+	<rect x="230.8" y="266.3" opacity="0.7" fill="#FFFFFF" width="185.2" height="17"/>
+	<rect x="97.6" y="301.8" opacity="0.7" fill="#FFFFFF" width="169" height="17"/>
+	<rect x="288.1" y="301.8" opacity="0.7" fill="#FFFFFF" width="169" height="17"/>
+	<rect x="97.6" y="340.8" fill="#E0C879" width="76" height="17"/>
+	<rect x="202.1" y="340.8" opacity="0.7" fill="#FFFFFF" width="76" height="17"/>
+	<rect x="306.6" y="340.8" fill="#C3D880" width="76" height="17"/>
+</g>
+<g id="Lignes_droite">
+	<rect x="528.2" y="25.4" fill="#95D5EE" width="100.1" height="17"/>
+	<rect x="528.2" y="228.9" fill="#395377" width="203.8" height="17"/>
+	<rect x="528.2" y="382.4" opacity="0.7" fill="#FFFFFF" width="163.2" height="17"/>
+	<rect x="528.2" y="415.8" opacity="0.7" fill="#FFFFFF" width="179.8" height="17"/>
+	<rect x="724.8" y="415.8" fill="#395377" width="179.8" height="17"/>
+	<rect x="562.2" y="70.4" opacity="0.7" fill="#FFFFFF" width="235.2" height="17"/>
+	<rect x="562.2" y="108.9" opacity="0.7" fill="#FFFFFF" width="173" height="17"/>
+	<rect x="756.2" y="109.8" fill="#395377" width="54" height="17"/>
+	<rect x="822.7" y="110.7" opacity="0.7" fill="#FFFFFF" width="75" height="17"/>
+	<rect x="562.2" y="147.4" fill="#95D5EE" width="129.2" height="17"/>
+	<rect x="758.7" y="147.4" opacity="0.7" fill="#FFFFFF" width="24.6" height="17"/>
+	<rect x="562.2" y="185.9" opacity="0.7" fill="#FFFFFF" width="145.8" height="17"/>
+	<rect x="562.2" y="265.4" opacity="0.7" fill="#FFFFFF" width="39.2" height="17"/>
+	<rect x="628.3" y="265.4" fill="#95D5EE" width="282.8" height="17"/>
+	<rect x="592.7" y="300.9" fill="#95D5EE" width="112.7" height="17"/>
+	<rect x="727.4" y="300.9" opacity="0.7" fill="#FFFFFF" width="87.3" height="17"/>
+	<rect x="829.1" y="300.9" opacity="0.7" fill="#FFFFFF" width="43.7" height="17"/>
+	<rect x="592.7" y="339.9" opacity="0.7" fill="#FFFFFF" width="190.5" height="17"/>
+</g>
+</svg>
