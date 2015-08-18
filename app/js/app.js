@@ -22,7 +22,7 @@ var app = (function(document, $) {
 	///////////////////////
 
 	// init controller
-		var controller = new ScrollMagic.Controller();
+/*		var controller = new ScrollMagic.Controller();
 
 		// Navbar
 		var navtween = TweenMax.to("nav.main,nav .cta",1, {className:"+=on-content"});
@@ -31,6 +31,6 @@ var app = (function(document, $) {
 						//.setTween("nav.main,li.cta", {className:"+=on-content"})
 						.setTween(navtween)
 						.addIndicators()
-						.addTo(controller);
+						.addTo(controller);*/
 
 })();

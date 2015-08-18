@@ -11,8 +11,8 @@ nav.main {
 	padding: $navHeight * 0.2 2rem;
 	width: 100%;
 	height: $navHeight;
-	position: fixed;
-	top: 0;
+	//position: fixed;
+	//top: 0;
 	z-index: 100;
 	.logo, .logo svg, .row{ // Logo height fix
 		height: 100%;
