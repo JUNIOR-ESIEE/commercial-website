@@ -1,32 +1,30 @@
 $navHeight: 6rem;
-@mixin nav-colors($text-color, $background) {
-	background: $background;
-	.logo svg {
-		.letter {
-			fill: $text-color;
-		}
-		.corner {
-			fill: $text-color;
-		}
-	}
-	.menu li, .menu i{
-		color: $text-color;
-	}
-}
 nav.main {
+	$text-color:rgba(255, 255, 255, 0.75);
+	$text-color-on-content:rgba(51, 51, 51, 1);
+	$bg:rgba(252,252,252,0);
+	$bg-on-content:rgba(252, 252, 252, .8);
+	background-color: $bg;
+	fill:$text-color;
+	color: $text-color;	
 	// General
-	
 	padding: $navHeight * 0.2 2rem;
 	width: 100%;
 	height: $navHeight;
 	position: fixed;
 	top: 0;
 	z-index: 100;
-
 	.logo, .logo svg, .row{ // Logo height fix
 		height: 100%;
 	}
-	
+	.logo {
+		.letter {
+			fill: inherit;
+		}
+		.corner {
+			fill: inherit;
+		}
+	}
 	.menu {
 		&-large {
 			ul.inline-list {
@@ -46,12 +44,19 @@ nav.main {
 				cursor: pointer;
 			}
 		}
+		li .cta {
+			@include cta(#7F8EC6,$text-color);
+		}
+		li .cta.on-content {
+			@include cta(#E3E6F2,$text-color-on-content);
+		}		
 	}
-	
-	@include nav-colors(rgba(255, 255, 255, 0.75),transparent);
 	&.on-content {
-		@include nav-colors(#333333,#fdfdfd);
 		@include material-shadow(1);
+		opacity: 1;
+		background-color: $bg-on-content;
+		fill:$text-color-on-content;
+		color: $text-color-on-content;		
 	}
 }
 .navspacer {

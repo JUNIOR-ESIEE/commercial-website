@@ -10,3 +10,6 @@ app/css
 # Teporary videos
 app/images/videobg.mp4
 app/images/videobg.webm
+
+#temp
+app/test.*

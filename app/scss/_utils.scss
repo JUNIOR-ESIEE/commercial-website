@@ -42,3 +42,55 @@
 	@media #{$small-only} {font-size: $large-size *0.7;}
 	@media #{$medium-only} {font-size: $large-size *0.85;}
 } 
+
+// CTA button
+
+@mixin cta($cta-bg,$hover-color) {
+	
+	text-align: center;
+	a {
+		position: relative;
+		//background:linear-gradient( 130deg,#40f99b, #ACFCD9);
+		background: #28536B;
+		padding: 1rem 2rem;
+
+		border-radius: 2rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: .1rem;
+		font-size: 1.15rem;
+		color: $cta-bg;
+		line-height: 1.4;
+	}
+	a:after { // Thanks to heapanalytics.com. Steal like an artist.
+		position:absolute;
+		top:2px;
+		left:2px;
+		right:2px;
+		bottom:2px;
+		opacity:0;
+		padding: .87rem 0rem;
+		content:attr(data-text);
+		border-radius:30px;
+		transition:opacity .15s, color .15s;
+		background-color: $cta-bg;
+		letter-spacing: .1rem;
+		font-size: 1.15rem;
+		line-height: 1.4;
+	}
+	a:hover:after {
+		opacity: 1;
+	}
+	a:hover {
+		color:$hover-color;
+	}	
+}
+
+// SVG Filters
+	svg.filters {
+		  width: 0;
+		  height: 0;
+		  margin: 0;
+		  padding: 0;
+		  border: 0;		
+	}

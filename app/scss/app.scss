@@ -3,13 +3,13 @@
 //Settings : 
 
 $body-font-family: "Source Sans Pro", sans-serif;
+@mixin special-font { font-family:  "Nunito", sans-serif;}
 $anchor-font-color: inherit;
 $anchor-font-color-hover: inherit;
 $row-width: rem-calc(1170*1.1);
-	$light: #FDFDFD;
-	$dark : #153131;
-	$blue : #57e2e5;
-	$green: #45cb85;
+	$light: #f4ecd6;
+	$blue:#789bd1;
+	$purple:#9074b1;
 
 
 // Make sure the charset is set appropriately
@@ -56,6 +56,7 @@ $row-width: rem-calc(1170*1.1);
 // General imports
 @import "utils";
 @import "nav";
+@import "footer";
 // Pages
 .home {
 	@import "home";

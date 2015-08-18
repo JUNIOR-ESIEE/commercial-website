@@ -1,0 +1,44 @@
+footer.main {
+	background-color: $blue;
+	.map {
+		padding: 0;
+		iframe {
+			width: 100%;
+			height: 30rem;
+		}
+	}
+	.contact {
+		h1.name {
+			@include resp-size(3.5rem);
+			text-align: center;
+			font-weight: 400;
+			color: $light;
+			line-height: 3;
+		}
+		h2.email {
+			font-weight: 600;
+			@include resp-size(3rem);
+			text-align: center;
+			//text-transform: uppercase;
+			line-height: 3;
+			em { // Obfuscate email
+				width: 0;
+				height: 0;
+				display: inline-block;
+				overflow: hidden;
+			}
+		}
+		p{
+			font-size: 1.5rem;
+			i.icon {
+				background-color: $light;
+				color: $blue;
+				display: inline-block;
+				font-size: 32px;				
+				padding: 22px;
+				width: 42px;
+				text-align: center;
+			}
+		}
+	}
+}

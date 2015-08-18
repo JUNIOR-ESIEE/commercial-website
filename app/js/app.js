@@ -7,11 +7,6 @@ var app = (function(document, $) {
 		},
 		_init = function() {
 			$(document).foundation();
-            // needed to use joyride
-            // doc: http://foundation.zurb.com/docs/components/joyride.html
-            $(document).on('click', '#start-jr', function () {
-                $(document).foundation('joyride', 'start');
-            });
 			_userAgentInit();
 		};
 	return {
@@ -21,4 +16,21 @@ var app = (function(document, $) {
 
 (function() {
 	app.init();
+	
+	///////////////////////
+	// ScrollMagic Stuff //
+	///////////////////////
+
+	// init controller
+		var controller = new ScrollMagic.Controller();
+
+		// Navbar
+		var navtween = TweenMax.to("nav.main,nav .cta",1, {className:"+=on-content"});
+	
+		new ScrollMagic.Scene({triggerElement: "#title-main",triggerHook:0.1,duration:150})
+						//.setTween("nav.main,li.cta", {className:"+=on-content"})
+						.setTween(navtween)
+						.addIndicators()
+						.addTo(controller);
+
 })();
