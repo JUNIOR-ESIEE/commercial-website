@@ -18,10 +18,7 @@ nav.main {
 		height: 100%;
 	}
 	.logo {
-		.letter {
-			fill: inherit;
-		}
-		.corner {
+		* {
 			fill: inherit;
 		}
 	}
