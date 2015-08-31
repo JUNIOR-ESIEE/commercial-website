@@ -3,13 +3,15 @@
 //Settings : 
 
 $body-font-family: "Source Sans Pro", sans-serif;
-@mixin special-font { font-family:  "Nunito", sans-serif;}
+@mixin special-font { font-family:  "Source Sans Pro", sans-serif;}
 $anchor-font-color: inherit;
 $anchor-font-color-hover: inherit;
 $row-width: rem-calc(1170*1.1);
 	$light: #f4ecd6;
-	$blue:#789bd1;
-	$purple:#9074b1;
+	//$blue: #0014F9;
+	//$purple: #3AEB90;
+$blue:#26043B;
+$purple:#F7D0B1;
 
 
 // Make sure the charset is set appropriately

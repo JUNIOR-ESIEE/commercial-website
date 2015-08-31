@@ -11,6 +11,7 @@
 	background-blend-mode: normal;
 }
 section.hero {
+	background: linear-gradient( -15deg,$purple, $blue);
 	text-align: center;
 	padding-bottom: 4rem;
 	.titles {
@@ -92,7 +93,7 @@ section.hero {
 		}
 	}
 	.cta {
-		@include cta(#8A7CB8,$light);
+		@include cta(#8A7CB8);
 		margin: 4rem auto;
 	}
 }

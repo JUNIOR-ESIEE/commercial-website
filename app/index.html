@@ -24,7 +24,7 @@
 </head>
 
 <body class="home">
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="filters">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="filters hide">
 		<filter id="filter-blur">
 			<feFlood flood-color="#555555" result="COLOR-gray" />
 			<feComposite in="COLOR-gray" in2="SourceAlpha" operator="in" result="caca"/>
@@ -52,7 +52,7 @@
 				<ul class="inline-list right">
 					<li><a href="#home">Acceuil</a></li>
 					<li><a href="#home">Qui Sommes-Nous</a></li>
-					<li><div class="cta"><a href="/contact" class="cta" data-text="Contactez-nous">Contactez-nous</a></div></li>
+					<li><a href="/contact" class="cta" data-text="Contactez-nous">Contactez-nous</a></li>
 				</ul>
 			</div>
 			<div class="small-6 hide-for-medium-up columns menu menu-small text-right">
@@ -60,14 +60,18 @@
 			</div>
 		</div>
 	</nav>
-	<div class="herobg"></div>
+	<!--<div class="herobg"></div>-->
 	<section class="hero" id="home">
-		<!--<div class="navspacer"></div>-->
+		<div class="navspacer"></div>
 		<div class="row wide titles" id="title-main">
 			<h1>Vos projets, nos étudiants.</h1>
 			<h2>Junior ESIEE réalise pour vous des projets en <em>Informatique</em>, <em>Électronique</em>, <em>Énergie</em> et <em>Génie Industriel</em></h2>
+			<div class="buttons">
+				<div class=""><a href="/contact" class="button cta" data-text="Contactez-nous">Contactez-nous</a></div>
+				<div class=""><a href="/contact" class="button learn" data-text="Contactez-nous">En savoir plus</a></div>
+			</div>
 		</div>
-		<div class="domains">
+		<div class="domains hide">
 			<div class="row">
 				<div class="small-12 medium-6 large-4 columns list">
 					<h3 class="active" data-slide="1">Développement web</h3>
@@ -82,7 +86,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="copy">
+		<div class="copy hide">
 			<div class="row">
 				<div class="small-12 medium-10 large-8 medium-centered large-centered columns">
 					<p>Junior ESIEE Réalise pour vous des projets en <em>Informatique</em> et <em>Électronique</em></p>
@@ -91,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="cta row">
+		<div class=" row hide">
 			<div class="row">
 				<a href="/contact" class="cta" data-text="Contactez-nous">Contactez-nous</a>
 			</div>

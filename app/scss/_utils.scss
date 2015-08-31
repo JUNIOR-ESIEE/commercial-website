@@ -45,47 +45,38 @@
 
 // CTA button
 
-@mixin cta($cta-bg,$hover-color) {
+@mixin cta($color) {
+	$basecolor: white;
 	
-	text-align: center;
-	a {
-		position: relative;
-		//background:linear-gradient( 130deg,#40f99b, #ACFCD9);
-		background: #28536B;
-		padding: 1rem 2rem;
-
-		border-radius: 2rem;
-		text-transform: uppercase;
-		font-weight: 600;
-		letter-spacing: .1rem;
-		font-size: 1.15rem;
-		color: $cta-bg;
-		line-height: 1.4;
+	color: #9B767D;
+	background: transparent;
+	
+	border: transparent solid 3px;
+	border-radius: 2rem;
+	transition: border .2s, background .2s, white .2s;
+	background: transparentize($basecolor,0.5);
+	
+	position: relative;
+	padding: 1rem 2rem;
+	
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: .1rem;
+	font-size: 1.15rem;
+	line-height: 1.4;
+	&:hover {
+		border: transparentize($basecolor,0.5) solid 3px;
+		background-color: transparent;
+		color: transparentize($basecolor,0.5);
 	}
-	a:after { // Thanks to heapanalytics.com. Steal like an artist.
-		position:absolute;
-		top:2px;
-		left:2px;
-		right:2px;
-		bottom:2px;
-		opacity:0;
-		padding: .87rem 0rem;
-		content:attr(data-text);
-		border-radius:30px;
-		transition:opacity .15s, color .15s;
-		background-color: $cta-bg;
-		letter-spacing: .1rem;
-		font-size: 1.15rem;
-		line-height: 1.4;
+	.icon {
+		font-size: 1.5rem;
+		line-height: 1.61rem;
 	}
-	a:hover:after {
-		opacity: 1;
-	}
-	a:hover {
-		color:$hover-color;
-	}	
 }
-
+.button {
+	
+}
 // SVG Filters
 	svg.filters {
 		  width: 0;
@@ -94,3 +85,6 @@
 		  padding: 0;
 		  border: 0;		
 	}
+span.icon {
+	font-family: "Ionicons";
+}
