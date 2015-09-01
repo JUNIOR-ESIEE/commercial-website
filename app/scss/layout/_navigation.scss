@@ -1,33 +1,34 @@
-$navHeight: 6rem;
 nav.main {
-	$text-color:rgba(255, 255, 255, 0.75);
-	$text-color-on-content:rgba(51, 51, 51, 1);
-	$bg:rgba(252,252,252,0);
-	$bg-on-content:rgba(252, 252, 252, .8);
-	background-color: $bg;
-	fill:$text-color;
-	color: $text-color;	
-	// General
-	padding: $navHeight * 0.2 2rem;
+	height: $navigation-height;
 	width: 100%;
-	height: $navHeight;
 	position: fixed;
 	top: 0;
-	z-index: 100;
+	z-index: 100;	
+	padding: $navigation-height-padding * 0.2 2rem;
+	
+	background: $navigation-bg-color;
+	fill:$navigation-text-color;
+	color: $navigation-text-color;
+	@include material-shadow($navigation-depth);
+	transition: fill .2s, color .2s, background .2s;
+	&.on-top {
+		@include material-shadow(0);
+		background: $navigation-ontop-bg-color;
+		fill:$navigation-ontop-text-color;
+		color: $navigation-ontop-text-color;		
+	}	
 	.logo, .logo svg, .row{ // Logo height fix
 		height: 100%;
 	}
-	.logo {
-		* {
-			fill: inherit;
-		}
+	.logo * {
+		fill: inherit;
 	}
 	.menu {
 		&-large {
 			ul.inline-list {
 				margin: 0;
 				li {
-					line-height: $navHeight * 0.6;
+					line-height: $navigation-height - $navigation-height-padding * 2;
 					font-size: 1.15rem;
 					font-weight: 600;
 				}
@@ -37,27 +38,15 @@ nav.main {
 		&-small {
 			i {
 				font-size: 2rem;
-				line-height: $navHeight * 0.6;
+				line-height: $navigation-height - $navigation-height-padding * 2;
 				cursor: pointer;
 			}
-		}
-		li .cta {
-			@include cta(#7F8EC6);
-		}
-		li .cta.on-content {
-			@include cta(#E3E6F2);
 		}		
 	}
-	&.on-content {
-		@include material-shadow(1);
-		opacity: 1;
-		background-color: $bg-on-content;
-		fill:$text-color-on-content;
-		color: $text-color-on-content;		
-	}
+
 }
 .navspacer {
-	height: $navHeight;
+	height: $navigation-height;
 	padding: 0;
 	margin: 0;
 }

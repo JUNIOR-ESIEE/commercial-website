@@ -1,99 +1,34 @@
 section.hero {
-	background: linear-gradient( -15deg,$purple, $blue);
+	background: linear-gradient( -15deg,$primary-color, $secondary-color);
 	text-align: center;
 	padding-bottom: 4rem;
-	.titles {
-		padding: 0 2rem;
-		margin: 1.5rem 0 4rem 0;
-		h1 {
-			color: $light;
-            @include resp-size(4.25rem);
-			@include special-font;
-			font-weight: 200;
-		}
-		h2 {
-			color: $light;
-			font-size: 1.5rem;
-			text-align: center;
-			line-height: 1.7;
-			font-weight: 400;
-			em {
-				font-style: normal;
-				font-weight: 600;
-			}		
-		}
+	padding: 0 2rem;
+	margin: 1.5rem 0 4rem 0;
+	h1 {
+		color: $light-text-color;
+		@include resp-size(4.25rem);
+		font-weight: 200;
 	}
-	.domains {
-		padding: 0 2rem;
-		margin: 4rem 0;
-		.list {
-			h3 {
-				color: $light;
-				text-align: left;
-				@media #{$medium-up} {font-size: 2rem;}
-				font-weight: 300;
-				&.active {
-					font-weight: 600;
-					text-shadow: 0 0 20px  rgba($light,0.3);
-				}
-			}
-		}
-		.image {
-			svg {
-				height: 20rem;
-				* {
-					//fill:$light;
-				}
-				opacity:0;
-				display: none;
-				&.active {
-					display: block;
-					opacity: 1;
-				}
-				
-				
-				
-                #Lignes_gauche rect, #Lignes_droite rect {
-                  fill: #FBFBFB;
-                  opacity: 1;
-                }
-                path#écran {
-                  fill:#FBFBFB
-                }
-              #blue,#red, #Boutons *, #Pied * {
-                fill: transparent;
-              }
-			}
-		}
-	}
-	.copy {
-		p {
-			color: $light;
-			font-size: 1.45rem;
-			text-align: center;
-			line-height: 1.7;
-			font-weight: 400;
-			em {
-				font-style: normal;
-				font-weight: 600;
-			}
-			
-		}
-	}
-	.cta {
-		@include cta(#8A7CB8);
-		margin: 4rem auto;
+	h2 {
+		color: $light-text-color;
+		font-size: 1.5rem;
+		text-align: center;
+		line-height: 1.7;
+		font-weight: 400;
+		em {
+			font-style: normal;
+			font-weight: 600;
+		}		
 	}
 }
 section.clients {
-	background-color: $light;
-	/*transform: rotate(4deg);*/
+	background-color: $light-bg-color;
 	width: 100%;
 	h1 {
 		padding: 0 2rem;
 		margin: 4rem 0 4rem 0;
 		text-align: center;
-		color: #789bd1;
+		color: $dark-text-color;
 		@include resp-size(4rem);
 		font-weight: 200;
 	}
@@ -110,10 +45,6 @@ section.clients {
 					width:15rem;
 					margin:6rem 2rem 2rem 2rem;
 				}
-				&.thin {
-					width:12.5rem;
-					margin:4rem 2rem 2rem 2rem;
-				}				
 			}
 		}
 	}
