@@ -34,3 +34,16 @@ var app = (function(document, $) {
 						.addTo(controller);*/
 
 })();
+
+var je = {};
+
+je.hero = document.querySelector("section.hero"); // Todo : make this scalable
+je.resizeHero = function() {
+	je.hero.style.height = window.innerHeight + "px";
+}
+$(document).ready(function(){
+	je.resizeHero();
+});
+window.onresize = function() {
+	je.resizeHero();
+}
