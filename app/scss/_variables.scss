@@ -25,8 +25,8 @@ $navigation-height-padding: $navigation-height * 0.2;
 $navigation-text-color: $dark-text-color;
 $navigation-bg-color: $light-bg-color;
 $navigation-depth: 2;
-$navigation-ontop-text-color: transparentize($light-text-color, 0.75);
-$navigation-ontop-bg-color: transparentize($light-bg-color, 0);
+$navigation-ontop-text-color: transparentize($light-text-color, 0.25);
+$navigation-ontop-bg-color: transparentize($light-bg-color, 1);
 
 //Home
-$home-hero-bg:
+$home-hero-bg: $dark-bg-color;

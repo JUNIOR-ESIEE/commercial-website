@@ -3,18 +3,27 @@
 	border: $bg-color solid 3px;
 	background: $bg-color;
 	&:hover {
-		background-color: transparent;
+		/*background-color: transparent;
 		color: $bg-color;
+		border: $bg-color solid 3px;*/
+	color:$text-color;
+	border: $bg-color solid 3px;
+	background: $bg-color;		
+		box-shadow: 0 0 15px 2.5px transparentize($bg-color,0.75);
 	}
 }
 
 @mixin button-ghost($color) {
-	$faded-color:transparentize($color,0.7);
+	$faded-color:transparentize($color,0.3);
 	color:$faded-color;
 	border: $faded-color solid 3px;
-	&:hover {
+	background-color: transparent;
+	
+	&:hover, &:focus, &:active {
 		color: color;
 		border: $color solid 3px;
+		background-color: transparent;
+		box-shadow: 0 0 15px 2.5px transparentize($color,0.85);
 	}
 }
 
@@ -25,12 +34,14 @@
 	line-height: 1.4;
 	
 	padding: 1rem 2rem;
+	margin: 1.5rem;
 	border-radius: 2rem;
 	
-	transition: border .2s, background .2s, color .2s;
+	transition: border .2s, background .2s, color .2s, box-shadow .3s;
+	@include button-ghost($light-bg-color);
 }
 
 .button-cta {
 	text-transform: uppercase;
-	@include button-full(red,blue);
+	@include button-full($primary-color,$light-text-color);
 }

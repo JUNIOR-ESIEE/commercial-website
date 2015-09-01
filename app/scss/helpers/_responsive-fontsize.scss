@@ -1,5 +1,0 @@
-@mixin resp-size($large-size) {
-	font-size: $large-size;
-	@media #{$small-only} {font-size: $large-size *0.7;}
-	@media #{$medium-only} {font-size: $large-size *0.85;}
-} 
