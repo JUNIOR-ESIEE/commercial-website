@@ -1,65 +1,31 @@
-@import "normalize";
-@import 'foundation/functions';
-//Settings : 
-
-$body-font-family: "Source Sans Pro", sans-serif;
-@mixin special-font { font-family:  "Source Sans Pro", sans-serif;}
-$anchor-font-color: inherit;
-$anchor-font-color-hover: inherit;
-$row-width: rem-calc(1170*1.1);
-	$light: #f4ecd6;
-	//$blue: #0014F9;
-	//$purple: #3AEB90;
-$blue:#26043B;
-$purple:#F7D0B1;
-
-
-// Make sure the charset is set appropriately
 @charset "UTF-8";
 
-  @import "foundation/components/grid";
-//@import "foundation/components/accordion";
-//@import "foundation/components/alert-boxes";
-  @import "foundation/components/block-grid";
-//@import "foundation/components/breadcrumbs";
-//@import "foundation/components/button-groups";
-  @import "foundation/components/buttons";
-  @import "foundation/components/clearing";
-//@import "foundation/components/dropdown";
-//@import "foundation/components/dropdown-buttons";
-//@import "foundation/components/flex-video";
-//@import "foundation/components/forms";
-//@import "foundation/components/icon-bar";
-  @import "foundation/components/inline-lists";
-//@import "foundation/components/joyride";
-//@import "foundation/components/keystrokes";
-//@import "foundation/components/labels";
-//@import "foundation/components/magellan";
-//@import "foundation/components/orbit";
-//@import "foundation/components/pagination";
-//@import "foundation/components/panels";
-//@import "foundation/components/pricing-tables";
-//@import "foundation/components/progress-bars";
-//@import "foundation/components/range-slider";
-//@import "foundation/components/reveal";
-//@import "foundation/components/side-nav";
-//@import "foundation/components/split-buttons";
-//@import "foundation/components/sub-nav";
-//@import "foundation/components/switches";
-//@import "foundation/components/tables";
-//@import "foundation/components/tabs";
-//@import "foundation/components/thumbs";
-//@import "foundation/components/tooltips";
-//@import "foundation/components/top-bar";
-  @import "foundation/components/type";
-//@import "foundation/components/offcanvas";
-  @import "foundation/components/visibility";
+// Resetting & Tools
+@import "normalize";
+@import 'foundation/functions';
 
-// General imports
-@import "utils";
-@import "nav";
-@import "footer";
-// Pages
-.home {
-	@import "home";
-}
+// Import all the settings
+@import "variables";
+
+// Get the foundation parts we need
+@import "foundation/components/grid";
+@import "foundation/components/block-grid";
+@import "foundation/components/buttons";
+@import "foundation/components/clearing";
+@import "foundation/components/inline-lists";
+@import "foundation/components/type";
+@import "foundation/components/visibility";
+
+// And our code
+
+@import "helpers/material-shadow";
+@import "helpers/no-margin-fusion";
+@import "helpers/responsive-fontsize";
+
+@import "components/buttons";
+@import "components/svg-filters";
+
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "pages/home";
