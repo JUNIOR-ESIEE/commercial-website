@@ -50,12 +50,13 @@ nav.main {
 		position: fixed;
 		top: -9999px;
 		height: 100%;
-		
+		bottom: 9999px;
 		left: 0;
 		right: 0;
 		background: transparentize($dark-bg-color,0);
 		display: flex;
 		flex-flow: column nowrap;
+		justify-content: center;
 		
 		a {
 			color: $light-text-color;

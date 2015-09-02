@@ -34,10 +34,8 @@ window.onresize = function() {
 	je.resizeHero();
 }
 
-// Competencies animations
-/*var pales = document.getElementById("svg2");
-TweenLite.to(pales, 10, {rotation:"360",ease:"Linear.easeNone",repeat:'-1'});*/
 
+// Navigation
 $(document).ready(function () { // Navbar
 	// init controller
 	var controller = new ScrollMagic.Controller();
@@ -51,12 +49,14 @@ $(document).ready(function () { // Navbar
 		.addTo(controller);
 	var navOpen = false;
 	var navElement = document.querySelector(".nav-overlay");
-	var navAnimation = new TweenLite.fromTo(navElement,1,{top:-1 * window.innerHeight},{top:0,paused:true});
-	//var closeNavAnimation = new TweenLite.to(".nav-overlay",0.6,{top:window.innerHeight, paused:true});
+	var navAnimation = new TweenLite.fromTo(navElement,1,{top:-1 * window.innerHeight,bottom:window.innerHeight},{top:0,bottom:0,paused:true});
+	navElement.style.top = '-9999px';
+	navElement.style.bottom = '9999px';
 	$(".toggle-nav").click(function(){
 		if(navOpen) {
-			navAnimation.reversed(true).restart().eventCallback("onComplete", function() {
+			navAnimation.reverse(0).eventCallback("onComplete", function() {
 				navElement.style.top = '-9999px';
+				navElement.style.bottom = '9999px';
 			});
 		} else {
 			navAnimation.reversed(false).restart().eventCallback("onComplete",null);
