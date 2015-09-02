@@ -22,14 +22,71 @@ section.hero {
 		}		
 	}
 }
+section.competencies {
+	background: $light-bg-color;
+	padding: 4rem 0 0 0 ;
+	h1 {
+		@include resp-size(3.25rem);
+		font-weight: 200;
+		text-align: center;
+	}
+	h2 {
+		font-weight: 700;
+		text-transform: uppercase;
+		@include resp-size(2rem);
+	}
+	div.separator {
+		width: 6rem;
+		height: .2rem;
+		margin: 1rem 0;
+		background: linear-gradient(10deg, $primary-color, $secondary-color);
+		//background: $primary-color;
+	}
+	p {
+		text-align: justify;
+		font-size: 1.15rem;
+	}
+	.row {
+		padding-top: 4rem;
+	}
+	.illustration {
+		display: flex !important;
+		justify-content: center;
+	}
+	svg{
+		display: block;
+	}
+	.menu {
+		display: flex;
+		flex-flow: row wrap;
+		a {
+			padding: 1rem;
+			flex-grow:1;
+
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1rem;
+			font-weight: 700;
+			letter-spacing: .05rem;
+			
+			//border-right: $light-text-color solid 1px;
+			border-left: none;			
+			&:last-child {
+				border-right:none;
+			}
+			color: $light-text-color;
+			background: $dark-bg-color;
+		}
+	}
+}
 section.clients {
-	background-color: $light-bg-color;
+	background: linear-gradient(25deg,$primary-color,$info-color);
 	width: 100%;
 	h1 {
 		padding: 0 2rem;
 		margin: 4rem 0 4rem 0;
 		text-align: center;
-		color: $dark-text-color;
+		color: $light-text-color;
 		@include resp-size(4rem);
 		font-weight: 200;
 	}

@@ -6,16 +6,16 @@ nav.main {
 	z-index: 100;	
 	padding: $navigation-height-padding 2rem;
 	
-	background: $navigation-bg-color;
-	fill:$navigation-text-color;
-	color: $navigation-text-color;
-	@include material-shadow($navigation-depth);
-	transition: fill .2s, color .2s, background .2s;
-	&.on-top {
-		@include material-shadow(0);
-		background: $navigation-ontop-bg-color;
-		fill:$navigation-ontop-text-color;
-		color: $navigation-ontop-text-color;		
+	background: $navigation-ontop-bg-color;
+	fill:$navigation-ontop-text-color;
+	color: $navigation-ontop-text-color;
+	@include material-shadow(0);
+	transition: fill .3s, color .3s, background .3s;
+	&.on-content {
+		@include material-shadow($navigation-depth);
+		background: $navigation-bg-color;
+		fill:$navigation-text-color;
+		color: $navigation-text-color;		
 	}	
 	.logo, .logo svg, .row{ // Logo height fix
 		height: 100%;

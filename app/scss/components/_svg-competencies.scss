@@ -1,0 +1,15 @@
+svg#energie #éolienne{
+	#pâles {
+		transform-origin: 627px -27px;
+		transform: rotate(90deg);
+		animation: rotatef 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite ;
+	}
+}
+@keyframes rotatef {
+  from {
+	transform: rotate(0deg);
+  }
+  to {
+	transform: rotate(360deg);
+  }
+}

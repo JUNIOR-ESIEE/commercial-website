@@ -1,12 +1,13 @@
 // Base Variables
-$primary-color: #8449CE;
-$secondary-color: #2E81F7;
+$primary-color: #9351e5;
+$secondary-color: #ef468b;
 
 $light-bg-color:#F9F9FA;
 $dark-bg-color:#232937;
 
 $light-text-color:#FFF;
 $dark-text-color:#323A4E;
+$dark-paragraph-color: #707583;
 
 $alert-color: #FF435E;
 $success-color: #27C87A;
@@ -17,6 +18,9 @@ $info-color: #1FD4FF;
 $body-font-family: "Source Sans Pro", sans-serif;
 $anchor-font-color: inherit;
 $anchor-font-color-hover: inherit;
+$header-font-color: $dark-text-color;
+$subheader-font-color: $dark-text-color;
+$body-font-color:$dark-paragraph-color;
 $row-width: rem-calc(1170*1.1);
 
 // Layout

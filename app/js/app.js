@@ -16,25 +16,11 @@ var app = (function(document, $) {
 
 (function() {
 	app.init();
-	
-	///////////////////////
-	// ScrollMagic Stuff //
-	///////////////////////
-
-	// init controller
-/*		var controller = new ScrollMagic.Controller();
-
-		// Navbar
-		var navtween = TweenMax.to("nav.main,nav .cta",1, {className:"+=on-content"});
-	
-		new ScrollMagic.Scene({triggerElement: "#title-main",triggerHook:0.1,duration:150})
-						//.setTween("nav.main,li.cta", {className:"+=on-content"})
-						.setTween(navtween)
-						.addIndicators()
-						.addTo(controller);*/
 
 })();
 
+
+// Auto resizing
 var je = {};
 
 je.hero = document.querySelector("section.hero"); // Todo : make this scalable
@@ -47,3 +33,18 @@ $(document).ready(function(){
 window.onresize = function() {
 	je.resizeHero();
 }
+
+// Competencies animations
+/*var pales = document.getElementById("svg2");
+TweenLite.to(pales, 10, {rotation:"360",ease:"Linear.easeNone",repeat:'-1'});*/
+
+
+$(document).ready(function(){ // Navbar
+						// init controller
+						var controller = new ScrollMagic.Controller();
+
+						// build scenes
+						new ScrollMagic.Scene({duration:0, offset:50})
+										.setClassToggle("#nav", "on-content") // add class toggle
+										.addTo(controller);
+});
