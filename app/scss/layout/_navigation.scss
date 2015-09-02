@@ -32,6 +32,9 @@ nav.main {
 					font-size: 1.15rem;
 					font-weight: 600;
 				}
+				.button.button-cta {
+					margin: 0;
+				}
 			}
 		}
 		
@@ -42,6 +45,56 @@ nav.main {
 				cursor: pointer;
 			}
 		}		
+	}
+	.nav-overlay {
+		position: fixed;
+		top: -9999px;
+		height: 100%;
+		
+		left: 0;
+		right: 0;
+		background: transparentize($dark-bg-color,0);
+		display: flex;
+		flex-flow: column nowrap;
+		
+		a {
+			color: $light-text-color;
+			text-align: center;
+			display: block;
+			//padding: 1.5rem 0;
+			line-height: 3;
+			font-size: 1.5rem;
+			font-weight: 600;
+			flex-shrink: 2;
+		}
+		a.button {
+			line-height: 1.4;
+			padding: 1rem 2rem;
+			margin: 2rem 5%;
+			flex-shrink: 0;
+		}
+		.row {
+			margin-top: 1.5rem;
+			height: auto;
+		}
+		.columns {
+			text-align: center;
+		}
+		svg {
+			width: 10rem;
+			display: inline;
+			* {
+				fill: $light-text-color;
+			}
+		}
+		.toggle-nav{
+			cursor: pointer;
+			i {
+				font-size: 4rem;
+				color:$light-text-color;
+				padding-right: 1rem;
+			}
+		}
 	}
 
 }

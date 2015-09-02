@@ -16,6 +16,7 @@ section.hero {
 		text-align: center;
 		line-height: 1.7;
 		font-weight: 300;
+		margin: auto 3.5rem;
 		em {
 			font-style: normal;
 			font-weight: 400;
@@ -34,6 +35,7 @@ section.competencies {
 		font-weight: 700;
 		text-transform: uppercase;
 		@include resp-size(2rem);
+		
 	}
 	div.separator {
 		width: 6rem;
@@ -45,6 +47,7 @@ section.competencies {
 	p {
 		text-align: justify;
 		font-size: 1.15rem;
+		
 	}
 	.row {
 		padding-top: 4rem;
