@@ -41,7 +41,7 @@ $(document).ready(function () { // Navbar
 	var controller = new ScrollMagic.Controller();
 
 	// build scenes
-	new ScrollMagic.Scene({
+	var navScene = new ScrollMagic.Scene({
 			duration: 0,
 			offset: 50
 		})
@@ -63,4 +63,15 @@ $(document).ready(function () { // Navbar
 		}
 		navOpen = !navOpen;
 	});	
+	
+	var refElement = document.querySelector(".clients .list");
+	// References
+	var refScene = new ScrollMagic.Scene({
+					triggerElement: refElement,
+					triggerHook:0.8,
+					duration:900
+				})
+				.setTween(refElement, {left:'-180rem',marginLeft:"100%"}) // trigger a TweenMax.to tween
+				.addTo(controller);
 });
+

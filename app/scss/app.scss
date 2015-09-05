@@ -19,12 +19,14 @@
 // And our code
 
 @import "helpers/material-shadow";
-@import "helpers/no-margin-fusion";
 @import "helpers/responsive-type";
 
 @import "components/buttons";
 @import "components/svg-filters";
 @import "components/svg-competencies";
+@import "components/type";
+@import "components/home-section";
+@import "components/dividers";
 
 @import "layout/navigation";
 @import "layout/footer";

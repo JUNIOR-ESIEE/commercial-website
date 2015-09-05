@@ -1,0 +1,11 @@
+div.nomarginfusion {
+	height: .01px;
+	width: 100%;
+}
+
+div.separator {
+	width: 6rem;
+	height: .2rem;
+	margin: 1rem 0;
+	background: linear-gradient(10deg, $primary-color, $secondary-color);
+}

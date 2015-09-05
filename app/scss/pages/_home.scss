@@ -17,6 +17,7 @@ section.hero {
 		line-height: 1.7;
 		font-weight: 300;
 		margin: auto 3.5rem;
+		text-transform: none;
 		em {
 			font-style: normal;
 			font-weight: 400;
@@ -24,31 +25,7 @@ section.hero {
 	}
 }
 section.competencies {
-	background: $light-bg-color;
 	padding: 4rem 0 0 0 ;
-	h1 {
-		@include resp-size(3.25rem);
-		font-weight: 200;
-		text-align: center;
-	}
-	h2 {
-		font-weight: 700;
-		text-transform: uppercase;
-		@include resp-size(2rem);
-		
-	}
-	div.separator {
-		width: 6rem;
-		height: .2rem;
-		margin: 1rem 0;
-		background: linear-gradient(10deg, $primary-color, $secondary-color);
-		//background: $primary-color;
-	}
-	p {
-		text-align: justify;
-		font-size: 1.15rem;
-		
-	}
 	.row {
 		padding-top: 4rem;
 	}
@@ -83,30 +60,70 @@ section.competencies {
 	}
 }
 section.clients {
-	background: linear-gradient(25deg,$primary-color,$info-color);
-	width: 100%;
-	h1 {
-		padding: 0 2rem;
-		margin: 4rem 0 4rem 0;
-		text-align: center;
-		color: $light-text-color;
-		@include resp-size(4rem);
-		font-weight: 200;
-	}
+	overflow-x: hidden;
 	.list {
+		margin-top: 4rem;
 		display: flex;
-		width: 100%;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		.client {
-			img {
-				width: 11rem;
-				margin:2rem 2rem;
-				&.thin {
-					width:15rem;
-					margin:6rem 2rem 2rem 2rem;
-				}
-			}
+		align-items: center;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		flex-shrink: 0;
+		width: 12*15rem;
+		position: relative;
+		left:0;
+		@media #{$screen} and (max-height:800px) {
+			animation: references 20s ease-in-out 0s infinite alternate;			
+		}
+		img {
+			width: 11rem;
+			margin: 2rem 2rem;
 		}
 	}
+}
+@keyframes references {
+  from {
+	left: 0;
+	  margin-left: 0%;
+  }
+  to {
+	left: -1*12*15rem;
+	  margin-left: 100%;
+  }
+}
+section.how {
+	min-height: 1000px;
+	background: $dark-bg-color;
+	h2 {
+		color: $light-text-color;
+	}
+	p {
+		color: $light-paragraph-color;
+	}
+	br {
+		margin-bottom: 1.5rem;
+	}
+	.columns:first-child {
+		padding-right: 2rem;
+	}
+	.columns:last-child {
+		padding-left: 2rem;
+	}	
+}
+section.video {
+	position: relative;
+	background-color: transparent;
+	min-height: 40rem;
+	.bg {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+		background:url('/images/video-thumb2.png'), blue ;
+/*		background-size: cover;
+		background-position: top center;*/
+	}
+
 }
