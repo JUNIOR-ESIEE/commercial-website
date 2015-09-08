@@ -1,3 +1,14 @@
 footer.main {
-
+	background: $dark-bg-color;
+	.presentation {
+		svg {
+			width: 55%;
+			* {
+				fill: $dark-paragraph-color;
+			}
+		}
+		p {
+			text-align: left;
+		}
+	}
 }

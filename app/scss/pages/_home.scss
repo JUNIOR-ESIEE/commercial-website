@@ -90,8 +90,11 @@ section.clients {
 	  margin-left: 100%;
   }
 }
-section.how {
-	min-height: 1000px;
+
+
+
+section.desc {
+	//min-height: 1000px;
 	background: $dark-bg-color;
 	h2 {
 		color: $light-text-color;
@@ -109,7 +112,36 @@ section.how {
 		padding-left: 2rem;
 	}	
 }
-section.video {
+
+section.process {
+	overflow-x: hidden;
+	h1 {
+		margin-bottom: 4rem;
+	}
+	.flexwrap {
+		display: flex;
+		flex-flow: row nowrap;
+		.step {
+			width: 25rem;
+			flex-shrink: 0;
+			flex-grow: 0;
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+			margin: auto 5rem;
+			svg {
+				margin-top: 3rem;
+				margin-bottom: 3rem;
+				* {
+					fill:$dark-text-color;
+					color:$dark-text-color;
+				}
+			}
+		}	
+	}
+}
+
+/*section.video {
 	position: relative;
 	background-color: transparent;
 	min-height: 40rem;
@@ -122,8 +154,8 @@ section.video {
 		right: 0;
 		
 		background:url('/images/video-thumb2.png'), blue ;
-/*		background-size: cover;
-		background-position: top center;*/
+		background-size: cover;
+		background-position: top center;
 	}
 
-}
+}*/

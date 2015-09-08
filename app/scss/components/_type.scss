@@ -8,3 +8,10 @@ h2 {
 	text-transform: uppercase;
 	@include resp-size(2rem);
 }
+p {
+	//font-weight: 300;
+	em {
+		font-style: normal;
+		font-weight: 700;
+	}
+}
