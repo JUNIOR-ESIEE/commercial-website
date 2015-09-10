@@ -105,7 +105,7 @@ module.exports = function(grunt) {
 		connect: {
 			app: {
 				options: {
-					port: 9000,
+					port: grunt.option('port') || 9000,
 					base: '<%= app %>/',
 					open: true,
 					livereload: true,
