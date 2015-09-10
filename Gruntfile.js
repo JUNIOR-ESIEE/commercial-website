@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 					base: '<%= app %>/',
 					open: true,
 					livereload: true,
-					hostname: '127.0.0.1'
+					hostname: grunt.option('hostname') || '127.0.0.1'
 				}
 			},
 			dist: {
