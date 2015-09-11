@@ -141,6 +141,26 @@ section.process {
 	}
 }
 
+section.contact {
+	.flexwrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column nowrap;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	input[type=text], input[type=email] {
+		margin: .75rem auto;
+		max-width: 40rem;
+		background: transparent;
+		color: $dark-text-color;
+		border: $dark-bg-color solid 3px;
+		border-radius: 1px;
+	}
+	
+}
+
 /*section.video {
 	position: relative;
 	background-color: transparent;

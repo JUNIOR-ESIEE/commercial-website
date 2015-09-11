@@ -65,6 +65,7 @@ $(document).ready(function () { // Navbar
 	});	
 	
 	var refElement = document.querySelector(".clients .list");
+	
 	// References
 	var refScene = new ScrollMagic.Scene({
 					triggerElement: refElement,
@@ -73,5 +74,15 @@ $(document).ready(function () { // Navbar
 				})
 				.setTween(refElement, {left:'-180rem',marginLeft:"100%"}) // trigger a TweenMax.to tween
 				.addTo(controller);
+	
+	//Process
+	
+	var processScene = new ScrollMagic.Scene({
+		triggerElement: "#process",
+		duration: 600,
+		triggerHook:0.2
+	})
+	.setPin("#process");
+	
 });
 
