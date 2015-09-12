@@ -39,6 +39,7 @@ section.competencies {
 	.menu {
 		display: flex;
 		flex-flow: row wrap;
+		position: relative;
 		a {
 			padding: 1rem;
 			flex-grow:1;
@@ -56,6 +57,23 @@ section.competencies {
 			}
 			color: $light-text-color;
 			background: $dark-bg-color;
+
+			&::before {
+				transition: max-width 0.8s ease;
+				max-width: 0;
+				padding: 1rem 0;
+				letter-spacing: .05rem;
+				position: absolute;
+				top: 0px;
+				overflow: hidden;
+				border-bottom: 4px solid $primary-color;
+				color: transparent;
+				content: attr(data-hover);
+				white-space: nowrap;
+			}
+			&.active::before {
+				max-width: 160px;
+			}
 		}
 	}
 }
@@ -94,14 +112,6 @@ section.clients {
 
 
 section.desc {
-	//min-height: 1000px;
-	background: $dark-bg-color;
-	h2 {
-		color: $light-text-color;
-	}
-	p {
-		color: $light-paragraph-color;
-	}
 	br {
 		margin-bottom: 1.5rem;
 	}
@@ -113,32 +123,8 @@ section.desc {
 	}	
 }
 
-section.process {
-	overflow-x: hidden;
-	h1 {
-		margin-bottom: 4rem;
-	}
-	.flexwrap {
-		display: flex;
-		flex-flow: row nowrap;
-		.step {
-			width: 25rem;
-			flex-shrink: 0;
-			flex-grow: 0;
-			display: flex;
-			flex-flow: column nowrap;
-			align-items: center;
-			margin: auto 5rem;
-			svg {
-				margin-top: 3rem;
-				margin-bottom: 3rem;
-				* {
-					fill:$dark-text-color;
-					color:$dark-text-color;
-				}
-			}
-		}	
-	}
+section.more {
+	text-align: center;
 }
 
 section.contact {
@@ -150,32 +136,26 @@ section.contact {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
-	input[type=text], input[type=email] {
+	.bgwrap {
 		margin: .75rem auto;
+		width: 100%;
 		max-width: 40rem;
-		background: transparent;
-		color: $dark-text-color;
-		border: $dark-bg-color solid 3px;
-		border-radius: 1px;
+		background-color: red;
+		position: relative;
+		padding: 2px;
+		background: linear-gradient(-25deg,$primary-color,$secondary-color);
+		border-radius: 3px;
+	}
+	input[type=text], input[type=email], input[type=tel], textarea {
+		border-radius: 3px;
+		height: 100%;
+		width: 100%;
+		padding: .5rem 1rem;
+		background: $dark-bg-color;
+		color: $light-text-color;
+		border: none;
+		font-size: 1.25rem;
+		resize: vertical;
 	}
 	
 }
-
-/*section.video {
-	position: relative;
-	background-color: transparent;
-	min-height: 40rem;
-	.bg {
-		z-index: -1;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		
-		background:url('/images/video-thumb2.png'), blue ;
-		background-size: cover;
-		background-position: top center;
-	}
-
-}*/

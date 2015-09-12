@@ -75,14 +75,38 @@ $(document).ready(function () { // Navbar
 				.setTween(refElement, {left:'-180rem',marginLeft:"100%"}) // trigger a TweenMax.to tween
 				.addTo(controller);
 	
-	//Process
 	
-	var processScene = new ScrollMagic.Scene({
-		triggerElement: "#process",
-		duration: 600,
-		triggerHook:0.2
-	})
-	.setPin("#process");
+	// Smoooooooth scroll
 	
+	var scrollToComp = function(e){
+		e.preventDefault();
+		TweenLite.to(window, 1.5, {scrollTo:{y:$("section.competencies").offset().top - 96}, ease:Power2.easeOut});
+	}
+	
+	$(".toComp").click(scrollToComp);
+	
+	var scrollToContact = function(e){
+		e.preventDefault();
+		TweenLite.to(window, 1.5, {scrollTo:{y:$("section.contact").offset().top - 96}, ease:Power2.easeOut});
+	}
+	
+	$(".toContact").click(scrollToContact);	
+
+	var scrollToHome = function(e){
+		e.preventDefault();
+		TweenLite.to(window, 1.5, {scrollTo:{y:$("section.hero").offset().top - 96}, ease:Power2.easeOut});
+	}
+	
+	$(".toHero").click(scrollToHome);
+	
+	//Competencies
+	$("section.competencies .menu a").click(function(e){
+		e.preventDefault();
+		var element = $(e.target);
+		if(! element.hasClass("active")) {
+			element.siblings(".active").removeClass("active");
+			element.addClass("active");
+		}
+	});
 });
 

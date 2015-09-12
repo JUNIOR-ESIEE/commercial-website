@@ -20,7 +20,7 @@
 	background-color: transparent;
 	
 	&:hover, &:focus, &:active {
-		color: color;
+		color: $color;
 		border: $color solid 3px;
 		background-color: transparent;
 		box-shadow: 0 0 15px 2.5px transparentize($color,0.85);
@@ -44,4 +44,8 @@
 .button-cta {
 	text-transform: uppercase;
 	@include button-full($primary-color,$light-text-color);
+}
+
+.button-ghost-primary {
+	@include button-ghost($primary-color);
 }
