@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="fr-FR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Junior ESIEE</title>
+
+	<link rel="stylesheet" href="css/app.min.css">
+	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300,200,600,700,900' rel='stylesheet' type='text/css'>
+	<link href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+	<style> /* The filters are only working here */
+
+	</style>
+</head>
+
+<body class="home">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="filters">
+		<filter id="filter-blur">
+			<feFlood flood-color="#555555" result="COLOR-gray" />
+			<feComposite in="COLOR-gray" in2="SourceAlpha" operator="in" result="caca"/>
+			<feGaussianBlur in="caca" stdDeviation="0.5" />
+		</filter>
+		<filter id="filter-gray">
+			<feFlood flood-color="#555555" result="COLOR-gray" />
+			<feComposite in="COLOR-gray" in2="SourceAlpha" operator="in" result="caca"/>
+		</filter>
+		<filter id="filter-grayscale">
+			<feColorMatrix in="SourceGraphic" type="saturate" values="0"/>
+		</filter>
+		<filter id="filter-bluescale">
+			<feFlood flood-color="#789bd1" result="color" />
+			<feColorMatrix in="SourceGraphic" type="saturate" values="0" result="graypic"/>
+			<feBlend in="graypic" in2="color" mode=multiply
+		</filter>		
+	</svg>
+	<!--[if lte IE 9]>
+	<div class="oldbrowser">
+		<div class="row">
+			<div class="small-12 columns">
+			<h1>Bonjour !</h1>
+			<p>Ce site est optimisé pour les navigateurs récents.</p>
+			</div>
+		</div>
+	</div>
+	<![endif]-->
+	<nav class="main" id="nav">
+		<div class="row">
+			<div class="small-6 large-1 columns logo">
+				<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1439.3 700.7" enable-background="new 0 0 1439.3 700.7" xml:space="preserve"> <g> <g> <path fill="#525970" d="M995.5,271.9c-4.8,5.7-13,7.3-19.5,3.7c-8.2-4.5-17.3-6.2-27.5-6.2c-17.8,0-27.7,5.5-27.7,15.1 c0,9.8,8.9,15.4,28.3,16.6c28.6,1.8,64.9,8.3,64.9,48.6c0,26.8-21.8,49.9-65.2,49.9c-19.7,0-39.4-2.7-58-16.4 c-7.2-5.3-9-15.3-3.9-22.7l0.5-0.7c4.9-7.1,14.4-9.1,21.9-4.8c12.1,7,28.1,11.6,40.2,11.8c14.2,0.3,27.4-7.1,27.4-18.2 c0-10.5-8.6-14.8-30.2-16c-28.6-2.2-62.8-12.6-62.8-47.1c0-35.1,36.3-47.4,64-47.4c16.6,0,30.3,2.3,43,8.9 c9.1,4.7,11.4,16.6,4.8,24.4L995.5,271.9z"/> <path fill="#525970" d="M1079,205.2c0,29.2-44.3,29.2-44.3,0S1079,176,1079,205.2z M1038.1,255.9v127.3c0,9.1,7.4,16.5,16.5,16.5 h4.5c9.1,0,16.5-7.4,16.5-16.5V255.9c0-9.1-7.4-16.5-16.5-16.5h-4.5C1045.5,239.3,1038.1,246.7,1038.1,255.9z"/> <path fill="#525970" d="M1141.5,333.2c2.5,18.8,18.8,32.3,45.2,32.3c9.8,0,21.8-2.6,31-7.3c6.4-3.3,14.2-2.3,19.4,2.8l0.7,0.7 c7.9,7.8,6.1,21-3.6,26.2c-14.6,7.9-32.1,11.8-48.1,11.8c-52.3,0-83.4-32.3-83.4-80.9c0-46.2,31.4-79.4,80.6-79.4 c41.7,0,70.6,21.2,76.3,63.5c2.2,16.1-10.3,30.4-26.5,30.4H1141.5z M1223.9,302.1c-2.5-19.7-17.8-29.5-39.4-29.5 c-20.3,0-36.9,9.8-42.5,29.5H1223.9z"/> <path fill="#525970" d="M1320.9,333.2c2.5,18.8,18.8,32.3,45.2,32.3c9.8,0,21.8-2.6,31-7.3c6.4-3.3,14.2-2.3,19.4,2.8l0.7,0.7 c7.9,7.8,6.1,21-3.6,26.2c-14.6,7.9-32.1,11.8-48.1,11.8c-52.3,0-83.4-32.3-83.4-80.9c0-46.2,31.4-79.4,80.6-79.4 c41.7,0,70.6,21.2,76.3,63.5c2.2,16.1-10.3,30.4-26.5,30.4H1320.9z M1403.4,302.1c-2.5-19.7-17.8-29.5-39.4-29.5 c-20.3,0-36.9,9.8-42.5,29.5H1403.4z"/> </g> <g> <path fill="#59C1D7" d="M763.9,80c22.1,0,40-17.9,40-40S786,0,763.9,0H600H362v80h238H763.9z"/> <line fill="#59C1D7" x1="362" y1="160" x2="362" y2="240"/> <path fill="#59C1D7" d="M763.9,319.3H600H442l0-79.3h98.3c22.1,0,40-17.9,40-40s-17.9-40-40-40H362v15v65v79.3H0v73.9v6.1v80.4 c0,59,23,114.5,64.7,156.3S162,700.7,221,700.7s114.5-23,156.3-64.7S442,538.8,442,479.8l0-80.4h158h163.9c22.1,0,40-17.9,40-40 S786,319.3,763.9,319.3z M362,479.8c0,77.7-63.2,141-141,141c-77.7,0-141-63.2-141-141v-80.4h282V479.8z"/> <rect x="442" y="319.3" opacity="0.2" fill="#1F727C" width="40" height="80"/> </g> <g> <path fill="#525970" d="M541.4,549.7c9.5,0,17.1,7.7,17.1,17.1V627c0,22.3,12.1,39.3,35.2,39.5c21.1,0.2,38.2-17.3,38.2-38.5 v-61.3c0-9.5,7.7-17.1,17.1-17.1h2c9.5,0,17.1,7.7,17.1,17.1v113.8c0,9.5-7.7,17.1-17.1,17.1h-0.3c-8.7,0-16-6.5-17-15.1l-0.6-5 c-15.3,15-29.4,22.2-50,22.2c-35.4,0-61.1-26.7-61.1-72.5v-60.5c0-9.5,7.7-17.1,17.1-17.1H541.4z"/> <path fill="#525970" d="M826.4,697.4c-9.5,0-17.1-7.7-17.1-17.1v-60.2c0-22.3-12.1-39.3-35.2-39.5c-21.1-0.2-38.2,17.3-38.2,38.5 v61.3c0,9.5-7.7,17.1-17.1,17.1h-2c-9.5,0-17.1-7.7-17.1-17.1V566.6c0-9.5,7.7-17.1,17.1-17.1h0.3c8.7,0,16,6.5,17,15.1l0.6,5 c15-14.7,30-22.2,48.5-22.2c34.8,0,62.6,26.1,62.6,72.5v60.5c0,9.5-7.7,17.1-17.1,17.1H826.4z"/> <path fill="#525970" d="M917.1,508.1c0,28.5-43.1,28.5-43.1,0C874,479.6,917.1,479.6,917.1,508.1z M877.3,566.3v114.1 c0,9.5,7.7,17.1,17.1,17.1h2.3c9.5,0,17.1-7.7,17.1-17.1V566.3c0-9.5-7.7-17.1-17.1-17.1h-2.3 C884.9,549.1,877.3,556.8,877.3,566.3z"/> <path fill="#525970" d="M1096.9,623.7c0,42.5-29.1,77-77,77s-76.7-34.5-76.7-77c0-42.2,29.4-77,76.4-77S1096.9,581.5,1096.9,623.7 z M979.7,623.7c0,22.5,13.5,43.4,40.1,43.4c26.7,0,40.1-21,40.1-43.4c0-22.2-15.6-43.7-40.1-43.7 C993.5,580,979.7,601.6,979.7,623.7z"/> <path fill="#525970" d="M1158.2,564.2l0.4,2.6c11.4-18.3,26.7-21,41.6-21c7.2,0,14.2,1.3,20.5,3.5c10.3,3.7,14.9,15.7,9.9,25.4 l-0.2,0.3c-4.1,7.9-13.3,11.6-21.7,8.9c-3.8-1.2-8-1.9-13.2-1.9c-19.2,0-36.9,10.2-36.9,37.5v60.8c0,9.5-7.7,17.1-17.1,17.1h-2.3 c-9.5,0-17.1-7.7-17.1-17.1V566.9c0-9.5,7.7-17.1,17.1-17.1h2.1C1149.7,549.7,1156.9,555.9,1158.2,564.2z"/> </g> </g> </svg>
+			</div>
+			<div class="show-for-large-up medium-10 large-11 columns clearfix menu menu-large">
+				<ul class="inline-list right">
+					<li><a href="#" class="toHero">Acceuil</a></li>
+					<li><a href="#" class="toComp">Compétences</a></li>
+					<li><a href="#">Fonctionnement</a></li>
+					<li><a href="#" class="button button-cta toContact">Contactez-nous</a></li>
+				</ul>
+			</div>
+			<div class="small-6 hide-for-large-up columns menu menu-small text-right">
+				<a href="#" class="toggle-nav"><i class="ion-navicon"></i></a>
+			</div>
+			<div class="nav-overlay">
+					<div class="row">
+						<div class="small-4 small-offset-4 columns logo"><svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1439.3 700.7" enable-background="new 0 0 1439.3 700.7" xml:space="preserve"> <g> <g> <path fill="#525970" d="M995.5,271.9c-4.8,5.7-13,7.3-19.5,3.7c-8.2-4.5-17.3-6.2-27.5-6.2c-17.8,0-27.7,5.5-27.7,15.1 c0,9.8,8.9,15.4,28.3,16.6c28.6,1.8,64.9,8.3,64.9,48.6c0,26.8-21.8,49.9-65.2,49.9c-19.7,0-39.4-2.7-58-16.4 c-7.2-5.3-9-15.3-3.9-22.7l0.5-0.7c4.9-7.1,14.4-9.1,21.9-4.8c12.1,7,28.1,11.6,40.2,11.8c14.2,0.3,27.4-7.1,27.4-18.2 c0-10.5-8.6-14.8-30.2-16c-28.6-2.2-62.8-12.6-62.8-47.1c0-35.1,36.3-47.4,64-47.4c16.6,0,30.3,2.3,43,8.9 c9.1,4.7,11.4,16.6,4.8,24.4L995.5,271.9z"/> <path fill="#525970" d="M1079,205.2c0,29.2-44.3,29.2-44.3,0S1079,176,1079,205.2z M1038.1,255.9v127.3c0,9.1,7.4,16.5,16.5,16.5 h4.5c9.1,0,16.5-7.4,16.5-16.5V255.9c0-9.1-7.4-16.5-16.5-16.5h-4.5C1045.5,239.3,1038.1,246.7,1038.1,255.9z"/> <path fill="#525970" d="M1141.5,333.2c2.5,18.8,18.8,32.3,45.2,32.3c9.8,0,21.8-2.6,31-7.3c6.4-3.3,14.2-2.3,19.4,2.8l0.7,0.7 c7.9,7.8,6.1,21-3.6,26.2c-14.6,7.9-32.1,11.8-48.1,11.8c-52.3,0-83.4-32.3-83.4-80.9c0-46.2,31.4-79.4,80.6-79.4 c41.7,0,70.6,21.2,76.3,63.5c2.2,16.1-10.3,30.4-26.5,30.4H1141.5z M1223.9,302.1c-2.5-19.7-17.8-29.5-39.4-29.5 c-20.3,0-36.9,9.8-42.5,29.5H1223.9z"/> <path fill="#525970" d="M1320.9,333.2c2.5,18.8,18.8,32.3,45.2,32.3c9.8,0,21.8-2.6,31-7.3c6.4-3.3,14.2-2.3,19.4,2.8l0.7,0.7 c7.9,7.8,6.1,21-3.6,26.2c-14.6,7.9-32.1,11.8-48.1,11.8c-52.3,0-83.4-32.3-83.4-80.9c0-46.2,31.4-79.4,80.6-79.4 c41.7,0,70.6,21.2,76.3,63.5c2.2,16.1-10.3,30.4-26.5,30.4H1320.9z M1403.4,302.1c-2.5-19.7-17.8-29.5-39.4-29.5 c-20.3,0-36.9,9.8-42.5,29.5H1403.4z"/> </g> <g> <path fill="#59C1D7" d="M763.9,80c22.1,0,40-17.9,40-40S786,0,763.9,0H600H362v80h238H763.9z"/> <line fill="#59C1D7" x1="362" y1="160" x2="362" y2="240"/> <path fill="#59C1D7" d="M763.9,319.3H600H442l0-79.3h98.3c22.1,0,40-17.9,40-40s-17.9-40-40-40H362v15v65v79.3H0v73.9v6.1v80.4 c0,59,23,114.5,64.7,156.3S162,700.7,221,700.7s114.5-23,156.3-64.7S442,538.8,442,479.8l0-80.4h158h163.9c22.1,0,40-17.9,40-40 S786,319.3,763.9,319.3z M362,479.8c0,77.7-63.2,141-141,141c-77.7,0-141-63.2-141-141v-80.4h282V479.8z"/> <rect x="442" y="319.3" opacity="0.2" fill="#1F727C" width="40" height="80"/> </g> <g> <path fill="#525970" d="M541.4,549.7c9.5,0,17.1,7.7,17.1,17.1V627c0,22.3,12.1,39.3,35.2,39.5c21.1,0.2,38.2-17.3,38.2-38.5 v-61.3c0-9.5,7.7-17.1,17.1-17.1h2c9.5,0,17.1,7.7,17.1,17.1v113.8c0,9.5-7.7,17.1-17.1,17.1h-0.3c-8.7,0-16-6.5-17-15.1l-0.6-5 c-15.3,15-29.4,22.2-50,22.2c-35.4,0-61.1-26.7-61.1-72.5v-60.5c0-9.5,7.7-17.1,17.1-17.1H541.4z"/> <path fill="#525970" d="M826.4,697.4c-9.5,0-17.1-7.7-17.1-17.1v-60.2c0-22.3-12.1-39.3-35.2-39.5c-21.1-0.2-38.2,17.3-38.2,38.5 v61.3c0,9.5-7.7,17.1-17.1,17.1h-2c-9.5,0-17.1-7.7-17.1-17.1V566.6c0-9.5,7.7-17.1,17.1-17.1h0.3c8.7,0,16,6.5,17,15.1l0.6,5 c15-14.7,30-22.2,48.5-22.2c34.8,0,62.6,26.1,62.6,72.5v60.5c0,9.5-7.7,17.1-17.1,17.1H826.4z"/> <path fill="#525970" d="M917.1,508.1c0,28.5-43.1,28.5-43.1,0C874,479.6,917.1,479.6,917.1,508.1z M877.3,566.3v114.1 c0,9.5,7.7,17.1,17.1,17.1h2.3c9.5,0,17.1-7.7,17.1-17.1V566.3c0-9.5-7.7-17.1-17.1-17.1h-2.3 C884.9,549.1,877.3,556.8,877.3,566.3z"/> <path fill="#525970" d="M1096.9,623.7c0,42.5-29.1,77-77,77s-76.7-34.5-76.7-77c0-42.2,29.4-77,76.4-77S1096.9,581.5,1096.9,623.7 z M979.7,623.7c0,22.5,13.5,43.4,40.1,43.4c26.7,0,40.1-21,40.1-43.4c0-22.2-15.6-43.7-40.1-43.7 C993.5,580,979.7,601.6,979.7,623.7z"/> <path fill="#525970" d="M1158.2,564.2l0.4,2.6c11.4-18.3,26.7-21,41.6-21c7.2,0,14.2,1.3,20.5,3.5c10.3,3.7,14.9,15.7,9.9,25.4 l-0.2,0.3c-4.1,7.9-13.3,11.6-21.7,8.9c-3.8-1.2-8-1.9-13.2-1.9c-19.2,0-36.9,10.2-36.9,37.5v60.8c0,9.5-7.7,17.1-17.1,17.1h-2.3 c-9.5,0-17.1-7.7-17.1-17.1V566.9c0-9.5,7.7-17.1,17.1-17.1h2.1C1149.7,549.7,1156.9,555.9,1158.2,564.2z"/> </g> </g> </svg></div>
+						<div class="small-2 small-offset-2 columns toggle-nav"><i class="ion-ios-close-empty"></i></div>
+					</div>
+					<a href="#">Acceuil</a>
+					<a href="#">Nos Compétences</a>
+					<a href="#">Références</a>
+					<a href="#">Comment ça marche ?</a>
+					<a href="#" class="button button-cta">Contactez-nous</a>
+			</div>
+		</div>
+	</nav>
+	<section class="hero">
+		<div class="navspacer"></div>
+		<div class="row">
+			<h1>Vos projets,<br>nos étudiants.</h1>
+			<h2>Junior ESIEE réalise pour vous des projets en <em>Informatique</em>, <em>Électronique</em>, <em>Énergie</em> et <em>Génie Industriel</em>.</h2>
+			<div class="buttons">
+				<a href="/contact" class="button button-cta toContact" data-text="Contactez-nous">Contactez-nous</a>
+				<a href="#" class="button toComp" data-text="Contactez-nous">En savoir plus</a>
+			</div>
+		</div>
+	</section>
+	<section class="competencies home-section">
+		<h1>Nos compétences</h1>
+		<div class="slide row" data-slide="energie">
+			<div class="text small-12 medium-8 columns">
+				<h2>Énergies</h2>
+				<div class="separator"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos, consequuntur culpa doloribus facere excepturi neque non, animi, rem reprehenderit, ducimus nemo laudantium cupiditate delectus nam expedita possimus modi molestiae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt recusandae alias tenetur excepturi, maiores dicta delectus quam, amet perferendis! Iste illo similique ratione magnam distinctio, assumenda ab aliquam ex.</p>
+			</div>
+			<div class="illustration show-for-medium-up medium-4 columns">
+				<svg id="energie" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="300" viewBox="-575 -154.5 317.8 461.1" xml:space="preserve"><metadata id="metadata1360"/><defs id="defs1358"><linearGradient x1="632.65" y1="-57.42" x2="632.65" y2="78.72" id="linearGradient5105" gradientUnits="userSpaceOnUse"/></defs><g transform="translate(-1048.8,16.2)" id="Calque_5_1_"><g id="éolienne"><g id="mât"><linearGradient x1="632.65" y1="-57.42" x2="632.65" y2="78.72" id="SVGID_2_" gradientUnits="userSpaceOnUse"><stop id="stop299" offset="0" style="stop-color:#000000;stop-opacity:0.15"/><stop id="stop301" offset="0.01" style="stop-color:#090909;stop-opacity:0.16"/><stop id="stop303" offset="0.05" style="stop-color:#373737;stop-opacity:0.19"/><stop id="stop305" offset="0.09" style="stop-color:#626262;stop-opacity:0.23"/><stop id="stop307" offset="0.14" style="stop-color:#888888;stop-opacity:0.27"/><stop id="stop309" offset="0.19" style="stop-color:#a8a8a8;stop-opacity:0.32"/><stop id="stop311" offset="0.25" style="stop-color:#c4c4c4;stop-opacity:0.37"/><stop id="stop313" offset="0.32" style="stop-color:#dadada;stop-opacity:0.42"/><stop id="stop315" offset="0.4" style="stop-color:#ebebeb;stop-opacity:0.49"/><stop id="stop317" offset="0.49" style="stop-color:#f6f6f6;stop-opacity:0.57"/><stop id="stop319" offset="0.63" style="stop-color:#fdfdfd;stop-opacity:0.68"/><stop id="stop321" offset="1" style="stop-color:#ffffff;stop-opacity:1"/></linearGradient><path d="m639.8 258.7-4.3-278.6c-0.6 0.2-1.2 0.3-1.8 0.3l-3.9 4.5-4.3 273.8h14.3z" id="path323" fill="url(#linearGradient5105)"/><path d="m635.5-19.9 4.3 278.6h-14.3l4.3-273.8-1.8 2-4.2 272.6c0 0.2 0.1 0.5 0.3 0.6 0.2 0.2 0.4 0.3 0.6 0.3h16c0 0 0 0 0 0 0.5 0 0.9-0.4 0.9-0.9 0 0 0-0.1 0-0.1l-4.3-280.1c-0.7 0.4-1.2 0.6-1.8 0.8z" id="path325" fill="#151515"/></g><g id="pâles"><path d="m635-32.8c-0.7-0.6-1.5-0.9-2.4-0.9-1.1 0-2.1 0.5-2.8 1.3-0.6 0.8-0.9 1.7-0.9 2.7 0.1 1 0.6 1.9 1.3 2.5 0.7 0.6 1.5 0.9 2.4 0.9 1.1 0 2.1-0.5 2.8-1.3 1.4-1.5 1.2-3.9-0.4-5.2z" id="path328" fill="none"/><path d="M758.6-11.2 640.5-34.6c-0.2 0-0.4-0.2-0.5-0.3-0.5-0.7-1-1.3-1.7-1.8-0.6-0.5-1.3-1-2.1-1.3-0.2-0.1-0.3-0.2-0.4-0.4l-43.6-112.3c-0.5-1.3-1.8-2.2-3.2-2.2-0.4 0-0.8 0.1-1.1 0.2l-0.1 0c-1.7 0.6-2.6 2.6-2 4.3l38.8 114c0.1 0.2 0.1 0.4 0 0.6-0.7 1.5-1 3.2-0.9 4.8 0 0.2 0 0.4-0.2 0.6l-75.4 93.9c-1.2 1.4-1 3.5 0.4 4.7l0.1 0.1c0.6 0.5 1.4 0.8 2.2 0.8 1 0 1.9-0.4 2.6-1.2l79.4-90.6c0.1-0.1 0.3-0.2 0.5-0.3 1.7-0.1 3.3-0.7 4.6-1.7 0.2-0.1 0.4-0.2 0.6-0.1l119 18.4c0.2 0 0.4 0.1 0.6 0.1 1.6 0 3-1.2 3.3-2.8l0-0.1c0.2-0.9 0-1.8-0.6-2.5-0.5-0.8-1.3-1.3-2.2-1.5zm-122-15.4c-1 1.2-2.5 1.9-4 1.9-1.2 0-2.4-0.4-3.4-1.2-1.1-0.9-1.7-2.2-1.8-3.5-0.1-1.4 0.3-2.7 1.2-3.8 1-1.2 2.5-1.9 4-1.9 1.2 0 2.4 0.4 3.4 1.2 2.2 1.8 2.5 5.1 0.6 7.3z" id="path330" fill="#fafafa"/><path d="m762-10.6c-0.7-1.1-1.9-1.8-3.1-2L641.1-36c-0.5-0.7-1.1-1.3-1.8-1.9-0.7-0.6-1.4-1-2.2-1.4l-43.5-112c-0.7-1.9-2.5-3.2-4.6-3.2-0.6 0-1.1 0.1-1.7 0.3l-0.1 0c-2.5 0.9-3.8 3.7-2.9 6.2L623-34.3c-0.7 1.6-1 3.3-0.9 5.1L547 64.5c-1.7 2.1-1.5 5.1 0.6 6.8l0.1 0.1c0.9 0.7 2 1.1 3.1 1.1 0 0 0 0 0 0 1.4 0 2.8-0.6 3.7-1.7l73.5-83.9 1.8-2 3.9-4.5c0.6-0.1 1.2-0.2 1.8-0.3 0.6-0.2 1.2-0.4 1.7-0.7 0.5-0.2 0.9-0.5 1.3-0.8L757.2-3c0.3 0 0.6 0.1 0.8 0.1 2.4 0 4.4-1.7 4.8-4l0-0.1c0.3-1.3 0-2.6-0.8-3.6zm-0.6 3.3 0 0c-0.3 1.7-1.7 2.9-3.3 2.9-0.2 0-0.4 0-0.6-0.1l-119-18.4c-0.2 0-0.4 0-0.6 0.1-1.3 1-2.9 1.6-4.6 1.7-0.2 0-0.4 0.1-0.5 0.3l-79.4 90.6c-0.6 0.8-1.6 1.2-2.6 1.2-0.8 0-1.5-0.3-2.2-0.8l-0.1-0.1c-1.4-1.2-1.6-3.3-0.4-4.7l75.4-93.9c0.1-0.2 0.2-0.4 0.2-0.6-0.2-1.7 0.1-3.3 0.9-4.8 0.1-0.2 0.1-0.4 0-0.6l-38.8-114c-0.6-1.7 0.3-3.7 2-4.3l0.1 0c0.4-0.1 0.8-0.2 1.1-0.2 1.4 0 2.7 0.9 3.2 2.2l43.6 112.3c0.1 0.2 0.2 0.3 0.4 0.4 0.8 0.3 1.5 0.8 2.1 1.3 0.6 0.5 1.2 1.2 1.7 1.8 0.1 0.2 0.3 0.3 0.5 0.3l118.1 23.4c0.9 0.2 1.6 0.6 2.2 1.4 0.5 0.9 0.7 1.7 0.6 2.6z" id="path332" fill="#202019"/><path d="m636-33.9c-0.9-0.8-2.1-1.2-3.4-1.2-1.5 0-3 0.7-4 1.9-0.9 1.1-1.3 2.4-1.2 3.8 0.1 1.4 0.8 2.6 1.8 3.5 0.9 0.8 2.1 1.2 3.4 1.2 1.5 0 3-0.7 4-1.9 1.9-2.2 1.6-5.5-0.6-7.3zm-3.4 7.7c-0.9 0-1.7-0.3-2.4-0.9-0.8-0.6-1.2-1.5-1.3-2.5-0.1-1 0.2-1.9 0.9-2.7 0.7-0.8 1.7-1.3 2.8-1.3 0.9 0 1.7 0.3 2.4 0.9 1.6 1.3 1.8 3.7 0.5 5.2-0.7 0.8-1.8 1.3-2.9 1.3z" id="path334" fill="#202019"/></g></g></g></svg>
+			</div>
+		</div>
+		<div class="menu">
+			<a href="#" data-slide-link="energie" data-hover="Informatique">Informatique</a>
+			<a href="#" data-slide-link="energie" class="active" data-hover="Énergies">Énergies</a>
+			<a href="#" data-slide-link="energie" data-hover="Électronique">Électronique</a>
+			<a href="#" data-slide-link="energie" data-hover="Génie industriel">Génie industriel</a>
+			<a href="#" data-slide-link="energie" data-hover="Études de marché">Études de marché</a>
+		</div>
+	</section>	
+	<section class="clients home-section">
+	<div class="nomarginfusion"></div>
+		<h1>Vous êtes en bonne compagnie.</h1>
+		<div class="list">
+			<img src="images/clients/spie.jpg" alt="SPIE BATIGNOLLES">
+			<img src="images/clients/engie.png" alt="ENGIE">
+			<img src="images/clients/orange.svg" alt="ORANGE">
+			<img src="images/clients/ratp.svg" alt="RATP">			
+			<img src="images/clients/thales.svg" alt="THALES">
+			<img src="images/clients/samsung.svg" alt="SAMSUNG">
+			<img src="images/clients/motorola.svg" alt="MOTOROLA">
+			<img src="images/clients/netgear.svg" alt="NETGEAR">
+			<img src="images/clients/safran.svg" alt="SAFRAN">
+			<img src="images/clients/edf.svg" alt="EDF">			
+			<img src="images/clients/ca2.svg" alt="Crédit Agricole">
+			<img src="images/clients/hec.svg" alt="HEC">			
+		</div>
+	</section>
+	<section class="desc home-section inverse">
+		<div class="row">
+			<div class="small-12 large-6 columns">
+				<h2>Les junior entreprises</h2>
+				<div class="separator"></div>
+				<p>
+					Une Junior-Entreprise est une association implantée au sein d’un établissement supérieur, elle <em>permet aux étudiants de mettre en pratique leur enseignement théorique</em>, en réalisant des études pour des clients très variés.<br>
+					Depuis 1962, le nombre de Junior-Entreprise ne cesse d’évoluer en France et représente aujourd’hui <em>plus de 160 structures actives.</em> Ce mouvement est représenté par la Confédération Nationale des Junior-Entreprises (CNJE) qui détient et attribue la marque Junior-Entreprise.<br>
+					Ce concept qui fut à l'origine français a séduit les étudiants et les entreprises du monde entier. De nos jours, les Junior-Entreprises existent aussi bien dans des pays européens, qu'en Afrique du Nord et  Amérique du Sud.										
+				</p>
+			</div>
+			<div class="small-12 large-6 columns">
+			<div class="separator"></div>
+				<h2>Notre histoire</h2>
+				<p>
+				Junior ESIEE est une association étudiante qui dispose d'un réel savoir-faire et de toutes les ressources nécessaires en mettant à votre disposition les compétences des futurs ingénieurs et managers d'ESIEE Paris. Sur le modèle d'un cabinet de conseil, l'association propose à ses clients de les accompagner dans leurs projets. Pour cela, les étudiants de l'école sont mis à contribution pour réaliser ces études et acquièrent ainsi, en plus d'une rémunération, une expérience professionnelle reconnue. <br>
+				Régie par une équipe de 14 administrateurs accompagnés de plusieurs membres actifs, Junior ESIEE vous garantit un suivi et une écoute à la hauteur de vos attentes.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="home-section more">
+			<h1>En savoir plus</h1>
+			<div class="buttons">
+				<a href="#" class="button button-ghost-primary">Comment fonctionne une étude ?</a><br>
+				<a href="#" class="button button-ghost-primary">Nos réalisations</a>	
+			</div>		
+	</section>
+	<section class="home-section contact inverse">
+		<h1>Discutons de votre projet !</h1>
+		<div class="flexwrap">
+			<div class="bgwrap">
+				<input type="text" name="name" placeholder="Comment vous appellez-vous ?"/>
+			</div>
+			<div class="bgwrap">
+				<input type="email" name="email" placeholder="Email"/>
+			</div>
+			<div class="bgwrap">
+				<input type="tel" name="tel" placeholder="Téléphone"/>
+			</div>
+			<div class="bgwrap">
+				<textarea name="desc" placeholder="Parlez-nous de votre projet.">
+				</textarea>
+			</div>
+		</div>
+	</section>	
+	<footer class="main home-section">
+		<div class="row">
+			<div class="small-6 large-4 columns presentation">
+				<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1439.3 700.7" enable-background="new 0 0 1439.3 700.7" xml:space="preserve"> <g> <g> <path fill="#525970" d="M995.5,271.9c-4.8,5.7-13,7.3-19.5,3.7c-8.2-4.5-17.3-6.2-27.5-6.2c-17.8,0-27.7,5.5-27.7,15.1 c0,9.8,8.9,15.4,28.3,16.6c28.6,1.8,64.9,8.3,64.9,48.6c0,26.8-21.8,49.9-65.2,49.9c-19.7,0-39.4-2.7-58-16.4 c-7.2-5.3-9-15.3-3.9-22.7l0.5-0.7c4.9-7.1,14.4-9.1,21.9-4.8c12.1,7,28.1,11.6,40.2,11.8c14.2,0.3,27.4-7.1,27.4-18.2 c0-10.5-8.6-14.8-30.2-16c-28.6-2.2-62.8-12.6-62.8-47.1c0-35.1,36.3-47.4,64-47.4c16.6,0,30.3,2.3,43,8.9 c9.1,4.7,11.4,16.6,4.8,24.4L995.5,271.9z"/> <path fill="#525970" d="M1079,205.2c0,29.2-44.3,29.2-44.3,0S1079,176,1079,205.2z M1038.1,255.9v127.3c0,9.1,7.4,16.5,16.5,16.5 h4.5c9.1,0,16.5-7.4,16.5-16.5V255.9c0-9.1-7.4-16.5-16.5-16.5h-4.5C1045.5,239.3,1038.1,246.7,1038.1,255.9z"/> <path fill="#525970" d="M1141.5,333.2c2.5,18.8,18.8,32.3,45.2,32.3c9.8,0,21.8-2.6,31-7.3c6.4-3.3,14.2-2.3,19.4,2.8l0.7,0.7 c7.9,7.8,6.1,21-3.6,26.2c-14.6,7.9-32.1,11.8-48.1,11.8c-52.3,0-83.4-32.3-83.4-80.9c0-46.2,31.4-79.4,80.6-79.4 c41.7,0,70.6,21.2,76.3,63.5c2.2,16.1-10.3,30.4-26.5,30.4H1141.5z M1223.9,302.1c-2.5-19.7-17.8-29.5-39.4-29.5 c-20.3,0-36.9,9.8-42.5,29.5H1223.9z"/> <path fill="#525970" d="M1320.9,333.2c2.5,18.8,18.8,32.3,45.2,32.3c9.8,0,21.8-2.6,31-7.3c6.4-3.3,14.2-2.3,19.4,2.8l0.7,0.7 c7.9,7.8,6.1,21-3.6,26.2c-14.6,7.9-32.1,11.8-48.1,11.8c-52.3,0-83.4-32.3-83.4-80.9c0-46.2,31.4-79.4,80.6-79.4 c41.7,0,70.6,21.2,76.3,63.5c2.2,16.1-10.3,30.4-26.5,30.4H1320.9z M1403.4,302.1c-2.5-19.7-17.8-29.5-39.4-29.5 c-20.3,0-36.9,9.8-42.5,29.5H1403.4z"/> </g> <g> <path fill="#59C1D7" d="M763.9,80c22.1,0,40-17.9,40-40S786,0,763.9,0H600H362v80h238H763.9z"/> <line fill="#59C1D7" x1="362" y1="160" x2="362" y2="240"/> <path fill="#59C1D7" d="M763.9,319.3H600H442l0-79.3h98.3c22.1,0,40-17.9,40-40s-17.9-40-40-40H362v15v65v79.3H0v73.9v6.1v80.4 c0,59,23,114.5,64.7,156.3S162,700.7,221,700.7s114.5-23,156.3-64.7S442,538.8,442,479.8l0-80.4h158h163.9c22.1,0,40-17.9,40-40 S786,319.3,763.9,319.3z M362,479.8c0,77.7-63.2,141-141,141c-77.7,0-141-63.2-141-141v-80.4h282V479.8z"/> <rect x="442" y="319.3" opacity="0.2" fill="#1F727C" width="40" height="80"/> </g> <g> <path fill="#525970" d="M541.4,549.7c9.5,0,17.1,7.7,17.1,17.1V627c0,22.3,12.1,39.3,35.2,39.5c21.1,0.2,38.2-17.3,38.2-38.5 v-61.3c0-9.5,7.7-17.1,17.1-17.1h2c9.5,0,17.1,7.7,17.1,17.1v113.8c0,9.5-7.7,17.1-17.1,17.1h-0.3c-8.7,0-16-6.5-17-15.1l-0.6-5 c-15.3,15-29.4,22.2-50,22.2c-35.4,0-61.1-26.7-61.1-72.5v-60.5c0-9.5,7.7-17.1,17.1-17.1H541.4z"/> <path fill="#525970" d="M826.4,697.4c-9.5,0-17.1-7.7-17.1-17.1v-60.2c0-22.3-12.1-39.3-35.2-39.5c-21.1-0.2-38.2,17.3-38.2,38.5 v61.3c0,9.5-7.7,17.1-17.1,17.1h-2c-9.5,0-17.1-7.7-17.1-17.1V566.6c0-9.5,7.7-17.1,17.1-17.1h0.3c8.7,0,16,6.5,17,15.1l0.6,5 c15-14.7,30-22.2,48.5-22.2c34.8,0,62.6,26.1,62.6,72.5v60.5c0,9.5-7.7,17.1-17.1,17.1H826.4z"/> <path fill="#525970" d="M917.1,508.1c0,28.5-43.1,28.5-43.1,0C874,479.6,917.1,479.6,917.1,508.1z M877.3,566.3v114.1 c0,9.5,7.7,17.1,17.1,17.1h2.3c9.5,0,17.1-7.7,17.1-17.1V566.3c0-9.5-7.7-17.1-17.1-17.1h-2.3 C884.9,549.1,877.3,556.8,877.3,566.3z"/> <path fill="#525970" d="M1096.9,623.7c0,42.5-29.1,77-77,77s-76.7-34.5-76.7-77c0-42.2,29.4-77,76.4-77S1096.9,581.5,1096.9,623.7 z M979.7,623.7c0,22.5,13.5,43.4,40.1,43.4c26.7,0,40.1-21,40.1-43.4c0-22.2-15.6-43.7-40.1-43.7 C993.5,580,979.7,601.6,979.7,623.7z"/> <path fill="#525970" d="M1158.2,564.2l0.4,2.6c11.4-18.3,26.7-21,41.6-21c7.2,0,14.2,1.3,20.5,3.5c10.3,3.7,14.9,15.7,9.9,25.4 l-0.2,0.3c-4.1,7.9-13.3,11.6-21.7,8.9c-3.8-1.2-8-1.9-13.2-1.9c-19.2,0-36.9,10.2-36.9,37.5v60.8c0,9.5-7.7,17.1-17.1,17.1h-2.3 c-9.5,0-17.1-7.7-17.1-17.1V566.9c0-9.5,7.7-17.1,17.1-17.1h2.1C1149.7,549.7,1156.9,555.9,1158.2,564.2z"/> </g> </g> </svg>
+				<p>Junior ESIEE réalise pour vous des projets en Informatique, Électronique, Énergie et Génie Industriel.</p>
+			</div>
+			<div class="small-6 large-3 columns">
+				
+			</div>
+			<div class="small-6 large-3 columns">
+				
+			</div>
+			<div class="small-6 large-3 columns">
+				
+			</div>
+		</div>
+	</footer>
+	<script src="js/vendor/libraries.min.js"></script>
+	
+
+	
+	<script src="js/vendor/foundation.min.js"></script>
+	<script src="js/app.min.js"></script>
+	
+	
+</body>
+
+</html>
