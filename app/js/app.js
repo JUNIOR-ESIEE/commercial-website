@@ -72,7 +72,7 @@ $(document).ready(function () { // Navbar
 					triggerHook:0.8,
 					duration:900
 				})
-				.setTween(refElement, {left:'-180rem',marginLeft:"100%"}) // trigger a TweenMax.to tween
+				.setTween(refElement, {left:'-210rem',marginLeft:"100%"}) // trigger a TweenMax.to tween
 				.addTo(controller);
 	
 	
