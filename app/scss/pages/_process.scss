@@ -1,0 +1,48 @@
+body.process {
+	.pagebg {
+		position: fixed;
+		z-index: -1;
+		//background: lighten(desaturate($info-color,20%),10%);
+		background:saturate(#8AA29E,40%);
+		width: 100%;
+	}
+	.step {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		padding-top: $navigation-height + 5rem;
+		padding-bottom: 5rem;
+		* {
+			
+		}
+		&:first-of-type {
+			padding-top: 5rem;
+		}
+		svg {
+			max-height: 20rem;
+		}
+		h1 {
+			color: $light-text-color;
+		}
+		p {
+			text-align: center;
+			font-size: 2rem;
+			color: $light-text-color;
+			em {
+				
+			}		
+		}
+	}
+}
+body.process p,body.process h1,body.process h2,body.process h3,body.process h4,body.process h5,body.process a,body.process em {
+	&::selection {
+		background: $dark-bg-color;
+		color: $light-text-color;
+	}
+}
+body.process p,body.process h1,body.process h2,body.process h3,body.process h4,body.process h5,body.process a,body.process em {
+	&::-moz-selection {
+		background: $dark-bg-color;
+		color: $light-text-color;
+	}
+}	

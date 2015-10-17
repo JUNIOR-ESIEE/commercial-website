@@ -1,14 +1,44 @@
 footer.main {
 	background: $dark-bg-color;
-	.presentation {
+	.columns {
+		margin-top: 3rem;
+	}
+	.logo {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 		svg {
+			display: block;
 			width: 55%;
+			margin-top: 1.5rem;
 			* {
 				fill: $dark-paragraph-color;
 			}
 		}
-		p {
-			text-align: left;
+	}
+	h3 {
+		line-height: .8;
+		margin-top: 0;
+		color: rgba(255, 255, 255, 0.5);
+	}
+	.partners {
+		ul {
+			margin-left: 0;
+			li {
+				list-style: none;
+				font-size: 1.15rem;
+			}
+		}
+	}
+	.social {
+		a {
+			margin-right: 1.5rem;
+		}
+		i {
+			font-size: 3rem;
+		}
+		.link-legal {
+			margin-top: .75rem;
 		}
 	}
 }

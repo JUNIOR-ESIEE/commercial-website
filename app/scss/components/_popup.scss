@@ -1,0 +1,26 @@
+.popup {
+	position: fixed;
+	top: 0rem;
+	bottom: 0rem;
+	left: 0rem;
+	right: 0rem;
+	padding: 3rem;
+	background: rgba(255, 255, 255, 0.95);
+	z-index: 150;
+	overflow-y: scroll;
+	.close {
+		cursor: pointer;
+		i {
+			font-size: 4rem;
+			position: fixed;
+			right: 3rem;
+			top: -.35rem;
+		}
+	}
+	&.legal {
+		p {
+			white-space: pre-wrap;
+			text-align: justify;
+		}
+	}
+}

@@ -23,9 +23,11 @@ var app = (function(document, $) {
 // Auto resizing
 var je = {};
 
-je.hero = document.querySelector("section.hero"); // Todo : make this scalable
+je.hero = $("section.hero, .maxH");
 je.resizeHero = function() {
-	je.hero.style.minHeight = window.innerHeight + "px";
+	je.hero.each(function(el){
+		this.style.minHeight = window.innerHeight + "px";
+	});
 }
 $(document).ready(function(){
 	je.resizeHero();
@@ -108,6 +110,31 @@ $(document).ready(function () { // Navbar
 			element.siblings(".active").removeClass("active");
 			element.addClass("active");
 		}
+	});
+	$(".toggle-legal").click(function(e) {
+		e.preventDefault();
+		$(".popup.legal").fadeToggle();
+	});
+	
+	var inputs = document.querySelectorAll( '.inputfile' );
+	Array.prototype.forEach.call( inputs, function( input )
+	{
+		var label	 = input.nextElementSibling,
+			labelVal = label.innerHTML;
+		console.log(label)
+		input.addEventListener( 'change', function( e )
+		{
+			var fileName = '';
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else
+				fileName = e.target.value.split( '\\' ).pop();
+
+			if( fileName )
+				label.innerHTML = fileName;
+			else
+				label.innerHTML = labelVal;
+		});	
 	});
 });
 

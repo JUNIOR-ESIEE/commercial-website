@@ -18,6 +18,7 @@
 
 // And our code
 
+@import "helpers/misc";
 @import "helpers/material-shadow";
 @import "helpers/responsive-type";
 
@@ -28,8 +29,10 @@
 @import "components/home-section";
 @import "components/dividers";
 @import "components/forms";
+@import "components/popup";
 
 @import "layout/navigation";
 @import "layout/footer";
 
 @import "pages/home";
+@import "pages/process";
