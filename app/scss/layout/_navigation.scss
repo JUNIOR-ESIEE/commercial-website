@@ -50,33 +50,35 @@ nav.main {
 		position: fixed;
 		top: -9999px;
 		height: 100%;
-		bottom: 9999px;
+		bottom:9999px;
 		left: 0;
 		right: 0;
 		background: transparentize($dark-bg-color,0);
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: center;
+		justify-content: space-between;
 		
 		a {
 			color: $light-text-color;
 			text-align: center;
 			display: block;
 			//padding: 1.5rem 0;
-			line-height: 3;
+			//line-height: 3;
 			font-size: 1.5rem;
 			font-weight: 600;
-			flex-shrink: 2;
+			flex-shrink: 1;
+			line-height: .8;
 		}
 		a.button {
 			line-height: 1.4;
 			padding: 1rem 2rem;
 			margin: 2rem 5%;
-			flex-shrink: 0;
+			flex-shrink: 0.3;
 		}
 		.row {
 			margin-top: 1.5rem;
 			height: auto;
+			flex-shrink: 0;
 		}
 		.columns {
 			text-align: center;

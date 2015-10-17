@@ -125,28 +125,66 @@ module.exports = function(grunt) {
 		},
 
 		wiredep: {
-			target: {
-				src: [
+				target: {
+					src: [
 					'<%= app %>/**/*.html'
 				],
-				exclude: [
+					exclude: [
 					'modernizr',
 					'jquery-placeholder',
 					'foundation'
 				]
+				}
+			},
+		browserSync: {
+			app: {
+				bsFiles: {
+					src: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}']
+				},
+				options: {
+					watchTask: true,
+					server: '<%= app %>',
+					scrollProportionally: true
+				}
 			}
-		}
-
+		},
+		postcss: {
+			options: {
+			  processors: [
+				require('autoprefixer')({browsers: 'last 3 versions, iOS >= 6, last 3 FirefoxAndroid version, safari > 6, last 3 ChromeAndroid version, last 3 android version'})
+			  ]
+			},
+			dist: {
+			  src: '<%= app %>/css/*.css'
+			}
+		},
+		assemble: {
+		  options: {
+			assets: "<%= app %>/images/",
+			data:   "path/to/config.json" 
+		  },
+		  project: {
+			options: {
+			  layout: "path/to/default-layout.hbs",
+			  partials: "path/to/partials/**/*.hbs" 
+			},
+			files: {
+			  'dest': ["path/to/pages/**/*.hbs" ]
+			}
+		  }
+		}		
 	});
-
+/*	grunt.loadNpmTasks('grunt-browser-sync');
+	grunt.loadNpmTasks('grunt-postcss');
+	grunt.loadNpmTasks('assemble' );*/
 	
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['compile-sass','postcss:dist', 'bower-install', 'browserSync:app', 'watch']);
 	grunt.registerTask('validate-js', [/*'jshint'*/ /*TODO, right.*/]);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
-	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-sass','postcss:dist', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

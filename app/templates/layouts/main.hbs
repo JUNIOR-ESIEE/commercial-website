@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="fr-FR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		{{#is title "Junior ESIEE"}}
+			{{ title }}
+		{{ else }}
+			{{ title }} &middot; Junior ESIEE
+		{{/is}}
+	</title>
+	<!-- build:css css/libraries.min.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css css/app.min.css -->
+	<link rel="stylesheet" href="css/app.css">
+	<!-- endbuild -->
+	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300,200,600,700,900' rel='stylesheet' type='text/css'>
+	<link href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+	<meta name="description" content="Junior ESIEE réalise pour vous des projets en Informatique, Électronique, Énergie et Génie Industriel.">
+	<meta name="keywords" content="Junior Entreprise, ESIEE, Informatique, électronique, étude, projet, génie industriel, énergie, étudiant">
+	<meta name="author" content="Junior ESIEE">
+</head>
+
+<body class="home">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="filters">
+		<filter id="filter-blur">
+			<feFlood flood-color="#555555" result="COLOR-gray" />
+			<feComposite in="COLOR-gray" in2="SourceAlpha" operator="in" result="caca"/>
+			<feGaussianBlur in="caca" stdDeviation="0.5" />
+		</filter>
+		<filter id="filter-gray">
+			<feFlood flood-color="#555555" result="COLOR-gray" />
+			<feComposite in="COLOR-gray" in2="SourceAlpha" operator="in" result="caca"/>
+		</filter>
+		<filter id="filter-grayscale">
+			<feColorMatrix in="SourceGraphic" type="saturate" values="0"/>
+		</filter>
+		<filter id="filter-bluescale">
+			<feFlood flood-color="#789bd1" result="color" />
+			<feColorMatrix in="SourceGraphic" type="saturate" values="0" result="graypic"/>
+			<feBlend in="graypic" in2="color" mode=multiply
+		</filter>		
+	</svg>
+	{{> compatibility-warning }}
+	{{> nav }}
+	{{> body }}
+	{{> contact }}
+	{{> footer }}
+	<!-- build:js js/vendor/libraries.min.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/fastclick/lib/fastclick.js"></script>
+	<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+	<script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+	<!-- endbower -->
+	<script src="bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script src="bower_components/ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script src="bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+	<!-- endbuild -->
+	
+	<!-- build:devonly -->
+	<script src="bower_components/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+	<!-- endbuild -->
+	
+	<!-- build:js js/vendor/foundation.min.js -->
+	<script src="bower_components/foundation/js/foundation/foundation.js"></script>
+	<script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
+	<!-- endbuild -->
+	<!-- build:js js/app.min.js -->
+	<script src="js/app.js"></script>
+	<!-- endbuild -->
+	
+	
+</body>
+
+</html>
