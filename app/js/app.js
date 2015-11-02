@@ -39,6 +39,7 @@ window.onresize = function() {
 
 // Navigation
 $(document).ready(function () { // Navbar
+	je.isHome = $("body").hasClass("home");
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
@@ -66,33 +67,42 @@ $(document).ready(function () { // Navbar
 		}
 		navOpen = !navOpen;
 	});	
-	
-	var refElement = document.querySelector(".clients .list");
-	
-	// References
-	var refScene = new ScrollMagic.Scene({
-					triggerElement: refElement,
-					triggerHook:0.8,
-					duration:900
-				})
-				.setTween(refElement, {left:'-210rem',marginLeft:"100%"}) // trigger a TweenMax.to tween
-				.addTo(controller);
-	
+	if(je.isHome) {
+		var refElement = document.querySelector(".clients .list");
+
+		// References
+		var refScene = new ScrollMagic.Scene({
+						triggerElement: refElement,
+						triggerHook:0.8,
+						duration:900
+					})
+					.setTween(refElement, {left:'-210rem',marginLeft:"100%"}) // trigger a TweenMax.to tween
+					.addTo(controller);
+		
+		$('.competencies .menu a').click(function(){
+			var target = $(this).attr('data-slide-link');
+			$('.competencies .slide.active').slideUp(400).removeClass('active');
+			
+			$(".competencies .slide[data-slide='" + target + "']").slideDown();
+			$(".competencies .slide[data-slide='" + target + "']").addClass('active');
+		});
+	}
+
 	
 	// Smoooooooth scroll
 	
 	var scrollToComp = function(e){
 		e.preventDefault();
-		TweenLite.to(window, 1.5, {scrollTo:{y:$("section.competencies").offset().top - 96}, ease:Power2.easeOut});
+		TweenLite.to(window, 1.5, {scrollTo:{y:$("#competencies").offset().top}, ease:Power2.easeOut});
 	}
 	
 	$(".toComp").click(scrollToComp);
 	
 	var scrollToContact = function(e){
 		e.preventDefault();
-		TweenLite.to(window, 1.5, {scrollTo:{y:$("section.contact").offset().top - 96}, ease:Power2.easeOut});
+		TweenLite.to(window, 1.5, {scrollTo:{y:$("#contact").offset().top}, ease:Power2.easeOut});
 	}
-	
+	console.log("pid")
 	$(".toContact").click(scrollToContact);	
 
 	var scrollToHome = function(e){

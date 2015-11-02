@@ -10,7 +10,7 @@ nav.main {
 	fill:$navigation-ontop-text-color;
 	color: $navigation-ontop-text-color;
 	@include material-shadow(0);
-	transition: fill .3s, color .3s, background .3s;
+	transition: fill .3s, color .3s, background .3s, box-shadow .3s;
 	&.on-content {
 		@include material-shadow($navigation-depth);
 		background: $navigation-bg-color;
@@ -100,6 +100,11 @@ nav.main {
 		}
 	}
 
+}
+
+.process nav.main {
+	fill:$navigation-text-color;
+	color: $navigation-text-color;		
 }
 .navspacer {
 	height: $navigation-height;
