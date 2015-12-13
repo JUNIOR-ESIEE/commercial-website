@@ -7,6 +7,7 @@ footer.main {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		transition: transform .3s;
 		svg {
 			display: block;
 			width: 55%;
@@ -27,6 +28,10 @@ footer.main {
 			li {
 				list-style: none;
 				font-size: 1.15rem;
+				transition: color .3s;
+				&:hover {
+					color: $light-text-color;
+				}				
 			}
 		}
 	}
@@ -36,9 +41,22 @@ footer.main {
 		}
 		i {
 			font-size: 3rem;
+			transition: color .3s;
+			&:hover {
+				color: $light-text-color;
+			}
 		}
 		.link-legal {
 			margin-top: .75rem;
+			transition: color .3s;
+			&:hover {
+				color: $light-text-color;
+			}			
+		}
+	}
+	&:hover {
+		.logo {
+			transform:rotate(-7.5deg) scale(1.1);
 		}
 	}
 }

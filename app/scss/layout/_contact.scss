@@ -1,0 +1,25 @@
+section.contact {
+	h2.address {
+		font-weight: 300;
+		text-align: center;
+		text-transform: none;
+		@include resp-size(3rem);
+	}
+	div.or {
+		text-align: center;
+		margin: 3rem auto;
+		div {
+			display: inline-block;
+			&.text {
+				font-size: 1.5rem;
+				line-height: 0.9;
+				color: $light-text-color;
+				margin: auto 1.5rem;
+			}
+			&.separator {
+				margin-top: 0;
+				margin-bottom: 0.48rem;
+			}
+		}
+	}
+}
