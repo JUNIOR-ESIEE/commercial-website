@@ -1,4 +1,5 @@
 body.process {
+	margin-bottom: 3rem;
 	.pagebg {
 		position: fixed;
 		z-index: -1;
@@ -6,18 +7,27 @@ body.process {
 		background:white;
 		width: 100%;
 	}
+	.arrow {
+		text-align: center;
+		color: #848995;
+		@include resp-size(4rem);
+		margin: 3rem 0;
+	}
 	.step {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-around;
-		padding-top: $navigation-height + 5rem;
-		padding-bottom: 5rem;
+		padding-top:  0;
+		padding-bottom: 0;
 		padding-right: auto;
 		&:first-of-type {
-			padding-top: 5rem;
+			padding-top: $navigation-height;
+		}
+		&.last {
+			padding-bottom: 5rem;
 		}
 		svg {
-			max-height: 15rem;
+			max-height: 10rem;
 			margin-top: 2.5rem;
 			margin-right: 7.5rem;
 			margin-left: 7.5rem;

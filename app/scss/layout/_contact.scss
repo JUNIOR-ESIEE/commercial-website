@@ -5,9 +5,10 @@ section.contact {
 		text-transform: none;
 		@include resp-size(3rem);
 	}
+	margin-bottom: 0;
 	div.or {
 		text-align: center;
-		margin: 3rem auto;
+		margin: 3rem auto 3rem auto;
 		div {
 			display: inline-block;
 			&.text {
