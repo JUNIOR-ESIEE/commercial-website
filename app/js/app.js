@@ -52,11 +52,11 @@ $(document).ready(function () { // Navbar
 		.addTo(controller);
 	var navOpen = false;
 	var navElement = document.querySelector(".nav-overlay");
-	var navAnimation = new TweenLite.fromTo(navElement,1,{top:-1 * window.innerHeight,bottom:window.innerHeight},{top:0,bottom:0,paused:true});
+	var navAnimation = new TweenLite.fromTo(navElement,1,{top:-1.2 * window.innerHeight,bottom:1.2*window.innerHeight},{top:0,bottom:0,paused:true});
 	navElement.style.top = '-9999px';
 	navElement.style.bottom = '9999px';
 	$(".toggle-nav").click(function(e){
-		e.preventDefault();
+		//e.preventDefault();
 		if(navOpen) {
 			navAnimation.reverse(0).eventCallback("onComplete", function() {
 				navElement.style.top = '-9999px';
